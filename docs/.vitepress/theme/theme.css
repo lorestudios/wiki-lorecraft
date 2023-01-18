@@ -1,0 +1,11 @@
+:root {
+  --vp-c-brand-darker: #945bbb;
+  --vp-c-brand-dark: #c27fd6;
+  --vp-c-brand: #05c59b;
+  --vp-c-brand-light: #81e7b8;
+  --vp-c-brand-lighter: #c1fcf3;
+}
+
+img {
+  border-radius: 36px;
+}

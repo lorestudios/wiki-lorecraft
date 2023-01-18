@@ -1,28 +1,35 @@
 ---
-layout: home
-
-title: VitePress
-titleTemplate: Vite & Vue Powered Static Site Generator
+layout: "home"
+sidebar: false
+title: "A Builders Village"
+description: "A friendly community of builders creating on an up to date build server!"
 
 hero:
-  name: VitePress
-  text: Vite & Vue Powered Static Site Generator
-  tagline: Simple, powerful, and performant. Meet the modern SSG framework you've always wanted.
+  name: Lorecraft
+  text: A Builders Village
+  tagline: A friendly community of builders creating on an up to date build server!
+  image:
+    src: .vitepress/public/logo.png
+    alt: Regolith logo
   actions:
     - theme: brand
-      text: Get Started
-      link: /guide/getting-started
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      text: ▷ Tour
+      link: /guide/tour
+    - theme: brand
+      text: Guide
+      link: /guide/
 
 features:
-  - title: "Vite: The DX that can't be beat"
-    details: Feel the speed of Vite. Instant server start and lightning fast HMR that stays fast regardless of the app size.
-  - title: Designed to be simplicity first
-    details: With Markdown-centered content, it's built to help you focus on writing and deployed with minimum configuration.
-  - title: Power of Vue meets Markdown
-    details: Enhance your content with all the features of Vue in Markdown, while being able to customize your site with Vue.
-  - title: Fully static yet still dynamic
-    details: Go wild with true SSG + SPA architecture. Static on page load, but engage users with 100% interactivity from there.
+  - icon: 🏕️
+    title: Friendly Community
+    details: The Lorecraft community supports each other to be the best builders we can be. Come join us on discord!
+  - icon: 🧰
+    title: Custom Plugins
+    details: Lorecraft uses custom plugins to help our community to be more creative and more productive.
+  - icon: 👩‍💻
+    title: Active Dev Team
+    details: Our Dev Team is always open to suggestions and actively works to keep the network running as smoothly as possible!
+  - icon: 🌍
+    title: Powerful Servers
+    details: We use powerful servers from OVH located in Canada. This gives us the best US/EU pings for a worldwide community experience!
 ---

@@ -1,150 +1,198 @@
-import { createRequire } from 'module'
-import { defineConfig } from 'vitepress'
+import {defineConfig} from "vitepress";
+// import { getLatestVersion } from './utils/latestVersion'
 
-const require = createRequire(import.meta.url)
-const pkg = require('vitepress/package.json')
+const title = "Lorecraft";
+const description =
+  "A flexible and language-agnostic addon-compiler for the Bedrock Edition of Minecraft.";
+const url = "https://wiki.lorecraft.online";
 
 export default defineConfig({
-  lang: 'en-US',
-  title: 'VitePress',
-  description: 'Vite & Vue powered static site generator.',
-
+  title,
+  description,
   lastUpdated: true,
-  cleanUrls: 'without-subfolders',
+  ignoreDeadLinks: true,
+  cleanUrls: "with-subfolders",
+  // base: "/wiki/",
 
-  head: [['meta', { name: 'theme-color', content: '#3c8772' }]],
-
-  markdown: {
-    headers: {
-      level: [0, 0]
-    }
-  },
+  head: [
+    ["link", {rel: "icon", type: "image/x-icon", href: "favicon.ico"}],
+    ["meta", {property: "og:type", content: "website"}],
+    ["meta", {property: "og:title", content: title}],
+    ["meta", {property: "og:url", content: url}],
+    ["meta", {property: "twitter:description", content: description}],
+    ["meta", {property: "twitter:title", content: title}],
+    ["meta", {property: "twitter:card", content: "summary_large_image"}],
+    ["meta", {property: "twitter:url", content: url}],
+  ],
 
   themeConfig: {
-    nav: nav(),
-
-    sidebar: {
-      '/guide/': sidebarGuide(),
-      '/config/': sidebarConfig()
-    },
+    logo: "/logo.png",
 
     editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
-      text: 'Edit this page on GitHub'
+      text: "A Builders Village.",
+      pattern: "https://wiki.lorecraft.online",
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ],
+    socialLinks: [{icon: "discord", link: "https://discord.gg/3exus-burrow"}],
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present Evan Youu'
+      message: "Released under the MIT license.",
+      copyright: `Copyright © ${new Date().getFullYear()} Lore Studios.`,
     },
 
-    algolia: {
-      appId: '8J64VVRP8K',
-      apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-      indexName: 'vitepress'
-    },
+    nav: [
+      {
+        text: "Guide",
+        link: "/guide/profiles",
+        activeMatch: "/guide/",
+      },
+      {
+        text: "Community",
+        link: "/guide/community",
+      },
+      {
+        text: "Plugins",
+        // link: "/plugins/",
+        items: [
+          {
+            text: "Server Plugins",
+            link: "/plugins/assetbrush",
+          },
+          {
+            text: "Custom Plugins",
+            link: "/plugins/assetbrush",
+          },
+        ],
+      },
+    ],
 
-    carbonAds: {
-      code: 'CEBDT27Y',
-      placement: 'vuejsorg'
-    }
-  }
-})
-
-function nav() {
-  return [
-    { text: 'Guide', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
-    { text: 'Configs', link: '/config/introduction', activeMatch: '/config/' },
-    {
-      text: pkg.version,
-      items: [
+    sidebar: {
+      "/guide/": [
         {
-          text: 'Changelog',
-          link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
+          text: "Introduction",
+          collapsible: true,
+          items: [
+            {
+              text: "Welcome to Lorecraft",
+              link: "/guide/tour",
+            },
+            {
+              text: "Installing",
+              link: "/guide/installing",
+            },
+            {
+              text: "Getting Started",
+              link: "/guide/getting-started",
+            },
+            {
+              text: "Troubleshooting",
+              link: "/guide/troubleshooting",
+            },
+          ],
         },
         {
-          text: 'Contributing',
-          link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md'
-        }
-      ]
-    }
-  ]
-}
-
-function sidebarGuide() {
-  return [
-    {
-      text: 'Introduction',
-      collapsible: true,
-      items: [
-        { text: 'What is VitePress?', link: '/guide/what-is-vitepress' },
-        { text: 'Getting Started', link: '/guide/getting-started' },
-        { text: 'Configuration', link: '/guide/configuration' },
-        { text: 'Deploying', link: '/guide/deploying' },
-        { text: 'Internationalization', link: '/guide/i18n' }
-      ]
-    },
-    {
-      text: 'Writing',
-      collapsible: true,
-      items: [
-        { text: 'Markdown', link: '/guide/markdown' },
-        { text: 'Asset Handling', link: '/guide/asset-handling' },
-        { text: 'Frontmatter', link: '/guide/frontmatter' },
-        { text: 'Using Vue in Markdown', link: '/guide/using-vue' },
-        { text: 'API Reference', link: '/guide/api' }
-      ]
-    },
-    {
-      text: 'Theme',
-      collapsible: true,
-      items: [
-        { text: 'Introduction', link: '/guide/theme-introduction' },
-        { text: 'Nav', link: '/guide/theme-nav' },
-        { text: 'Sidebar', link: '/guide/theme-sidebar' },
-        { text: 'Prev Next Link', link: '/guide/theme-prev-next-link' },
-        { text: 'Edit Link', link: '/guide/theme-edit-link' },
-        { text: 'Last Updated', link: '/guide/theme-last-updated' },
-        { text: 'Layout', link: '/guide/theme-layout' },
-        { text: 'Home Page', link: '/guide/theme-home-page' },
-        { text: 'Team Page', link: '/guide/theme-team-page' },
-        { text: 'Badge', link: '/guide/theme-badge' },
-        { text: 'Footer', link: '/guide/theme-footer' },
-        { text: 'Search', link: '/guide/theme-search' },
-        { text: 'Carbon Ads', link: '/guide/theme-carbon-ads' }
-      ]
-    },
-    {
-      text: 'Migrations',
-      collapsible: true,
-      items: [
-        {
-          text: 'Migration from VuePress',
-          link: '/guide/migration-from-vuepress'
+          text: "Advanced",
+          collapsible: true,
+          items: [
+            {
+              text: "Configuration File",
+              link: "/guide/configuration",
+            },
+            {
+              text: "User Configuration",
+              link: "/guide/user-configuration",
+            },
+            {
+              text: "Data Folder",
+              link: "/guide/data-folder",
+            },
+            {
+              text: "Export Targets",
+              link: "/guide/export-targets",
+            },
+            {
+              text: "Profiles",
+              link: "/guide/profiles",
+            },
+            {
+              text: "Safety",
+              link: "/guide/safety",
+            },
+          ],
         },
         {
-          text: 'Migration from VitePress 0.x',
-          link: '/guide/migration-from-vitepress-0'
-        }
-      ]
-    }
-  ]
-}
-
-function sidebarConfig() {
-  return [
-    {
-      text: 'Config',
-      items: [
-        { text: 'Introduction', link: '/config/introduction' },
-        { text: 'App Configs', link: '/config/app-configs' },
-        { text: 'Theme Configs', link: '/config/theme-configs' },
-        { text: 'Frontmatter Configs', link: '/config/frontmatter-configs' }
-      ]
-    }
-  ]
-}
+          text: "Filters",
+          collapsible: true,
+          items: [
+            {
+              text: "Introduction",
+              link: "/guide/filters",
+            },
+            {
+              text: "Local Filters",
+              link: "/guide/local-filters",
+            },
+            {
+              text: "Custom Filters",
+              link: "/guide/custom-filters",
+            },
+            {
+              text: "Online Filters",
+              link: "/guide/online-filters",
+            },
+            {
+              text: "Installing Filters",
+              link: "/guide/installing-filters",
+            },
+            {
+              text: "Filter Run Modes",
+              link: "/guide/filter-run-modes",
+            },
+            {
+              text: "Create a Filter",
+              link: "/guide/create-a-filter",
+            },
+          ],
+        },
+        {
+          text: "Filter Types",
+          collapsible: true,
+          items: [
+            {
+              text: "Java Filters",
+              link: "/guide/java-filters",
+            },
+            {
+              text: ".NET Filters",
+              link: "/guide/dotnet-filters",
+            },
+            {
+              text: "Nim Filters",
+              link: "/guide/nim-filters",
+            },
+            {
+              text: "Python Filters",
+              link: "/guide/python-filters",
+            },
+            {
+              text: "Shell Filters",
+              link: "/guide/shell-filters",
+            },
+            {
+              text: "NodeJS Filters",
+              link: "/guide/node-filters",
+            },
+            {
+              text: "Deno Filters",
+              link: "/guide/deno-filters",
+            },
+            {
+              text: "Profile Filters",
+              link: "/guide/profile-filters",
+            },
+          ],
+        },
+      ],
+    },
+  },
+});
