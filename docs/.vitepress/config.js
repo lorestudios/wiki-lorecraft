@@ -4,11 +4,11 @@ export default {
     logo: "/images/logo.png",
     siteTitle: "Lorecraft",
 
-    algolia: {
-      appId: "...",
-      apiKey: "...",
-      indexName: "...",
-    },
+    // algolia: {
+    //   appId: "...",
+    //   apiKey: "...",
+    //   indexName: "...",
+    // },
 
     nav: [
       {text: "Home", link: "/"},
