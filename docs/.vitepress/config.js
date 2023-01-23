@@ -1,5 +1,5 @@
 export default {
-  base: "/wiki-lorecraft/",
+  base: "wiki.lorecraft.online/",
   themeConfig: {
     logo: "/images/logo.png",
     siteTitle: "Lorecraft",
