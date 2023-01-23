@@ -7,7 +7,7 @@ customHero:
   text: A builders village.
   tagline: Excepteur nulla labore do mollit in ullamco commodo consectetur. Sit et excepteur ipsum labore cupidatat ex tempor fugiat eu exercitation elit.
   image:
-    src: /images/logo.png
+    src: ./images/logo.png
     alt: VitePress
   actions:
     - theme: alt
