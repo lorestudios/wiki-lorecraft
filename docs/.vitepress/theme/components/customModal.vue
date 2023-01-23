@@ -6,7 +6,7 @@
             </svg>
             {{ buttonText }}
         </button>
-        <div v-if="show" class="modal fixed top-0 left-0 right-0 bottom-0 z-50 flex items-center justify-center">
+        <div v-if="show" class="modalBox fixed top-0 left-0 right-0 bottom-0 z-50 flex items-center justify-center">
             <span @click="closeModal" class="modalBg fixed top-0 left-0 right-0 bottom-0 z-0" />
             <span @click="closeModal" class="block text-white fixed top-3 md:top-4 right-3 md:right-4 bg-red-400 z-50 p-1 rounded-full cursor-pointer hover:opacity-80 duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 md:w-5 lg:w-6 h-4 md:h-5 lg:h-6">
@@ -38,11 +38,11 @@
 </template>
 
 <style>
-    .modal {
+    .modalBox {
         z-index: 999;
     }
     .modalBg {
-        background-color: var(--docsearch-container-background);
+        background-color: #545454b3;
     }
 </style>
 
