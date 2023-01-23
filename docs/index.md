@@ -9,15 +9,15 @@ hero:
   image:
     src: ./images/logo.png
     alt: Lorecraft Logo
+  actions:
+    - theme: brand #alt
+      text: Guide
+      link: /welcome
   modalButton:
     theme: brand
     buttonText: Tour
     videoUrl: https://www.youtube.com/embed/RhAoLSX9n1Y
     videoTitle: Tour
-  actions:
-    - theme: brand #alt
-      text: Guide
-      link: /welcome
 
 features:
   - icon: 🏕️
