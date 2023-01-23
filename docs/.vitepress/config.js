@@ -1,7 +1,7 @@
 export default {
   base: "/",
   themeConfig: {
-    logo: "/images/logo.png",
+    logo: "/images/logo32.png",
     siteTitle: "Lorecraft",
 
     // algolia: {
