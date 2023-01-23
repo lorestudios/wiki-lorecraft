@@ -1,7 +1,7 @@
 export default {
   base: "/wiki-lorecraft/",
   themeConfig: {
-    logo: "/assets/images/logo.png",
+    logo: "/images/logo.png",
     siteTitle: "Lorecraft",
 
     algolia: {

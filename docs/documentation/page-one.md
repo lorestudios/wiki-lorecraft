@@ -21,7 +21,7 @@ Veniam dolore aliquip exercitation aliqua et officia exercitation et reprehender
     text="Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse."
   />
   <CustomFeatureBox 
-    iconImg="/assets/images/logo.png"
+    iconImg="/images/logo.png"
     title="Simple and minimal, always"
     text="Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse."
   />
