@@ -42,4 +42,20 @@
 		color: var(--vp-button-alt-hover-text);
 		background-color: var(--vp-button-alt-hover-bg);
 	}
+    .VPNavBarMenu.menu {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    #docsearch {
+        padding-left: 15px;
+    }
+    @media only screen and (max-width: 768px) {
+        #docsearch span:last-child{
+            display: none;
+        }
+        .modal-back .modal {
+            max-width: calc(100% - 50px)!important;
+            border-radius: 6px!important;
+        }
+    }
 }
