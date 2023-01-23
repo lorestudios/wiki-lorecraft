@@ -1,21 +1,22 @@
 {
-  "name": "fiverr-lorecraft",
+  "name": "lorecraft",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Lorecraft wiki",
+  "main": "index.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "author": "akashmony01 <akashmonya88@gmail.com>",
-  "license": "ISC",
+  "author": "Whetu Paitai <whetu@pikistudios.com>",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4",
-    "vitepress": "^1.0.0-alpha.38"
+    "vitepress": "^1.0.0-alpha.40",
+    "vue": "^3.2.45"
   },
   "postcss": {
     "plugins": {
@@ -23,5 +24,6 @@
       "autoprefixer": {}
     }
   },
-  "repository": "git@github.com:akashmony01/lorecraft.git"
+  "repository": "git@github.com:lorestudios/wiki-lorecraft.git",
+  "private": true
 }
