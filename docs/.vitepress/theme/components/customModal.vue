@@ -15,10 +15,10 @@
             </span>
             <div class="sticky z-10 iframeContainer w-10/12 md:w-8/12 aspect-video shadow-md modalBg flex items-center justify-center">
                 <iframe
-                    v-if="videoUrl"
+                    v-if="finalUrl"
                     width="100%"
                     height="100%"
-                    :src="videoUrl" 
+                    :src="finalUrl" 
                     :title="videoTitle" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -69,6 +69,15 @@ export default {
             type: String,
             default: "Tour",
         },
+    },
+
+    computed: {
+        // a computed getter
+        finalUrl() {
+            if(this.videoUrl) {
+                return this.videoUrl+'?autoplay=1';
+            }
+        }
     },
 
     methods: {
