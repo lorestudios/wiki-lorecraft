@@ -15,7 +15,7 @@ hero:
     videoUrl: https://www.youtube.com/embed/RhAoLSX9n1Y
     videoTitle: Tour
   actions:
-     - theme: brand #alt
+    - theme: brand #alt
       text: Guide
       link: /welcome
 
