@@ -1,5 +1,5 @@
 export default {
-  base: "lorestudios.github.io",
+  base: "/index.md/",
   themeConfig: {
     logo: "/assets/images/logo.png",
     siteTitle: "Lorecraft",
