@@ -5,10 +5,10 @@ title: home page
 customHero:
   name: Lorecraft
   text: A builders village.
-  tagline: Excepteur nulla labore do mollit in ullamco commodo consectetur. Sit et excepteur ipsum labore cupidatat ex tempor fugiat eu exercitation elit.
+  tagline: A friendly community of builders creating on an up to date build server!
   image:
     src: ./images/logo.png
-    alt: VitePress
+    alt: Lorecraft Logo
   actions:
     - theme: alt
       text: Guide
@@ -19,33 +19,17 @@ customHero:
     videoUrl: https://www.youtube.com/embed/RhAoLSX9n1Y
     videoTitle: This is new title
 
-
 features:
-  - icon: 🛠️
-    title: Simple and minimal, always
-    details: Duis sit qui culpa ex pariatur in voluptate id.
-  - icon: 🛠️
-    title: Another cool feature
-    details: Fugiat excepteur pariatur deserunt incididunt fugiat officia ex aliqua mollit laborum consequat duis mollit incididunt.
-  - icon: 🛠️
-    title: Another cool feature
-    details: Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse.
-  - icon: 🛠️
-    title: Another cool feature
-    details: Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse.
-  - icon: 🛠️
-    title: Another cool feature
-    details: Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse.
-  - icon: 🛠️
-    title: Another cool feature
-    details: Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse.
-  - icon: 🛠️
-    title: Another cool feature
-    details: Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse.
-  - icon: 🛠️
-    title: Another cool feature
-    details: Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse.
-  - icon: 🛠️
-    title: Another cool feature
-    details: Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse.
+  - icon: 🏕️
+    title: Friendly Community
+    details: The Lorecraft community supports each other to be the best builders we can be. Come join us on discord!
+  - icon: 🧰
+    title: Custom Plugins
+    details: Lorecraft uses custom plugins to help our community to be more creative and more productive.
+  - icon: 👩‍💻
+    title: Active Dev Team
+    details: Our Dev Team is always open to suggestions and actively works to keep the network running as smoothly as possible!
+  - icon: 🌍
+    title: Powerful Servers
+    details: We use powerful servers from OVH located in Canada. This gives us the best US/EU pings for a worldwide community experience!
 ---
