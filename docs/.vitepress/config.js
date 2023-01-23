@@ -11,30 +11,31 @@ export default {
     // },
 
     nav: [
-      {text: "Guide", link: "/documentation/welcome"},
+      {text: "Home", link: "/"},
+      {text: "Page One", link: "/documentation/page-one"},
+      {text: "Page Two", link: "/documentation/page-two"},
       {
-        text: "Plugins",
+        text: "Pages",
         items: [
-          {text: "Asset Brush", link: "/documentation/abr"},
-          {text: "Bungee Essentials", link: "/documentation/abr"},
-          {text: "FAWE", link: "/documentation/fawe"},
+          {text: "Home ", link: "/"},
+          {text: "Page One", link: "/documentation/page-one"},
+          {text: "Page Two", link: "/documentation/page-two"},
+          {text: "Team Page", link: "/team/team-page"},
         ],
       },
     ],
     sidebar: [
       {
-        text: "Welcome",
+        text: "Doc Page",
         collapsible: true,
         items: [
-          {text: "Welcome to Lorecraft", link: "/documentation/welcome"},
-          {
-            text: "Getting around Lorecraft",
-            link: "/documentation/getting-around",
-          },
+          {text: "Home", link: "/documentation/"},
+          {text: "Page one", link: "/documentation/page-one"},
+          {text: "Page two", link: "/documentation/page-two"},
         ],
       },
       {
-        text: "Commands",
+        text: "Team Page",
         collapsible: true,
         items: [
           {text: "Home", link: "/team/"},
@@ -42,9 +43,12 @@ export default {
         ],
       },
       {
-        text: "Events",
+        text: "Integreation",
         collapsible: true,
-        items: [{text: "Alien Planet", link: "/documentation/alien-planet"}],
+        items: [
+          {text: "Introduction", link: "/introduction"},
+          {text: "Getting Started", link: "/getting-started"},
+        ],
       },
     ],
   },
