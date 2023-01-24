@@ -10,7 +10,7 @@ title: Alien Planet
 
 <CustomFeature>
   <CustomFeatureBox 
-    iconImg="./../images/detail.png"
+    iconImg="./../images/detail.gif"
     title="Event Details"
     text="Starts: 02 December 2022
     Ends: 31 December 2022
