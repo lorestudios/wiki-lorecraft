@@ -24,7 +24,7 @@ export default {
     ],
     sidebar: [
       {
-        text: "Welcome",
+        text: "Network",
         collapsible: true,
         items: [
           {text: "Welcome to Lorecraft", link: "/documentation/welcome"},
@@ -36,17 +36,15 @@ export default {
         text: "Tools",
         collapsible: true,
         items: [
-          {text: "Our Plugins", link: "/team/"},
+          {text: "Commands List", link: "/team/"},
+          {text: "Build Plugins", link: "/team/"},
           {text: "Custom Plugins", link: "/team/team-page"},
         ],
       },
       {
         text: "Events",
         collapsible: true,
-        items: [
-          {text: "Introduction", link: "/introduction"},
-          {text: "Getting Started", link: "/getting-started"},
-        ],
+        items: [{text: "Alien Planet", link: "/documentation/alien-planet"}],
       },
     ],
   },
