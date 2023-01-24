@@ -3,7 +3,7 @@
     <div class="container flex flex-col-reverse lg:flex-row items-center justify-between gap-8 sm:gap-10 xl:gap-12">
       <article class="w-full lg:w-7/12 text-center lg:text-left">
         <h1>
-          <span class="customName block text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight sm:leading-tight lg:leading-tight">
+          <span class="customName block text-4xl sm:text-6xl lg:text-8xl font-bold leading-tight sm:leading-tight lg:leading-tight">
             {{ page.frontmatter.customHero.name }}
           </span>
           <span class="customText block text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight sm:leading-tight lg:leading-tight">

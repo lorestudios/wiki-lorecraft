@@ -5,14 +5,14 @@ title: home page
 customHero:
   name: Lorecraft
   text: A builders village.
-  tagline: A friendly community of builders creating on an up to date build server!
+  tagline: A friendly community of builders, creating on an up to date Minecraft build server!
   image:
     src: ./images/logo.png
     alt: Lorecraft Logo
   actions:
     - theme: alt
       text: Guide
-      link: /page-one
+      link: /documentation/welcome
   modalButton:
     theme: brand
     buttonText: tour
@@ -22,14 +22,14 @@ customHero:
 features:
   - icon: 🏕️
     title: Friendly Community
-    details: The Lorecraft community supports each other to be the best builders we can be. Come join us on discord!
+    details: Welcome to the Lorecraft community! We support each other to be the best builders and level designers we can be. Join us on discord!
   - icon: 🧰
     title: Custom Plugins
-    details: Lorecraft uses custom plugins to help our community to be more creative and more productive.
+    details: Lorecraft empowers our community with custom plugins enhancing productivity and creativity, making building and creating more enjoyable.
   - icon: 👩‍💻
     title: Active Dev Team
-    details: Our Dev Team is always open to suggestions and actively works to keep the network running as smoothly as possible!
+    details: Our Dev Team is open to suggestions to improve your experience and actively works to keep the network running as smoothly as possible!
   - icon: 🌍
     title: Powerful Servers
-    details: We use powerful servers from OVH located in Canada. This gives us the best US/EU pings for a worldwide community experience!
+    details: We use powerful servers from OVH located in Canada, giving us the best US/EU pings for a worldwide community experience!
 ---
