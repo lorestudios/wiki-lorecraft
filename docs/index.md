@@ -15,7 +15,7 @@ customHero:
       link: /documentation/welcome
   modalButton:
     theme: brand
-    buttonText: tour
+    buttonText: Tour
     videoUrl: https://www.youtube.com/embed/RhAoLSX9n1Y
     videoTitle: This is new title
 
