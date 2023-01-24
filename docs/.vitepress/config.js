@@ -12,7 +12,7 @@ export default {
 
     nav: [
       {text: "Home", link: "/"},
-      {text: "Guide", link: "/documentation/page-one"},
+      {text: "Guide", link: "/documentation/welcome"},
       {text: "Sponsers", link: "/documentation/page-two"},
       {
         text: "Plugins",
