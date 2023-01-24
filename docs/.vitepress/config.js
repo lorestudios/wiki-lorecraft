@@ -36,9 +36,9 @@ export default {
         text: "Tools",
         collapsible: true,
         items: [
-          {text: "Commands List", link: "/team/"},
-          {text: "Build Plugins", link: "/team/"},
-          {text: "Custom Plugins", link: "/team/team-page"},
+          {text: "Commands List", link: "/documentation/commands"},
+          {text: "Build Plugins", link: "/documentation/plugins"},
+          {text: "Custom Plugins", link: "/documentation/custom"},
         ],
       },
       {
