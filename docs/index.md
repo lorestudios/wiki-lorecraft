@@ -33,3 +33,5 @@ features:
     title: Powerful Servers
     details: We use powerful servers from OVH located in Canada, giving us the best US/EU pings for a worldwide community experience!
 ---
+
+::: play.lorecraft.online :::
