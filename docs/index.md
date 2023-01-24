@@ -18,8 +18,6 @@ customHero:
     buttonText: tour
     videoUrl: https://www.youtube.com/embed/RhAoLSX9n1Y
     videoTitle: This is new title
-    
-::: play.lorecraft.online :::
 
 features:
   - icon: 🏕️
