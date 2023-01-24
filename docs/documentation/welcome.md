@@ -1,40 +1,23 @@
 ---
 title: Welcome
-
-features:
-  - icon: 🛠️
-    title: Simple and minimal, always
-    details: Duis sit qui culpa ex pariatur in voluptate id.
-  - icon: 🛠️
-    title: Another cool feature
-    details: Fugiat excepteur pariatur deserunt incididunt fugiat officia ex aliqua mollit laborum consequat duis mollit incididunt.
 ---
 
-# Hi there this is page on
+# A home for builders!
 
-Veniam dolore aliquip exercitation aliqua et officia exercitation et reprehenderit deserunt dolore irure incididunt veniam. In esse nisi veniam veniam cillum cupidatat incididunt. Adipisicing quis esse aute do occaecat velit nulla nulla sunt ea ipsum. Elit ex laboris irure ea magna proident. Reprehenderit mollit est consequat velit. Fugiat culpa eu eu incididunt nisi officia ullamco nulla labore officia amet occaecat. Non cillum nulla labore deserunt Lorem culpa pariatur eiusmod.
+Welcome to our friendly Minecraft server! Here at Lorecraft, our goal is to create a supportive and enjoyable environment for all builders to let their creativity flow. Our community is made up of like-minded individuals who all share a passion for building and creating in Minecraft. We believe that by fostering a positive and welcoming atmosphere, our members can truly enjoy themselves and build to their full potential.
 
-<CustomFeature>
-  <CustomFeatureBox 
-    iconText="🛠️"
-    title="Simple and minimal, always"
-    text="Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse."
-  />
-  <CustomFeatureBox 
-    iconImg="./../images/logo.png"
-    title="Simple and minimal, always"
-    text="Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse."
-  />
-</CustomFeature>
+## Plugins
 
-## heading two
+One of the key features of our server is the use of custom plugins that empower our community to be more productive and creative. These tools allow builders to easily create and build in ways that would not be possible on a traditional Minecraft server. Additionally, our Dev Team is always open to suggestions to improve the experience for our members, and actively works to keep the network running smoothly.
 
-Labore fugiat cillum consectetur consequat amet commodo duis sunt magna elit laborum. Excepteur Lorem excepteur fugiat cupidatat esse commodo aute in elit nisi. Laborum occaecat mollit sint irure dolore eu incididunt.
+## Discord
 
-### heading three
+Another important aspect of our server is our community. We have a discord server that is always active and buzzing with activity. Here, members can share their builds, give and receive feedback, and just hang out and have fun. The community is incredibly supportive and always willing to lend a helping hand to new members.
 
-Ut qui officia eiusmod minim proident incididunt aliqua do do.
+## Servers
 
-## heading two
+We also have powerful servers from OVH located in Canada, providing the best US/EU pings for a worldwide community experience. This ensures that everyone can enjoy building and creating on our server, no matter where they are located.
 
-Aute velit cillum veniam minim nostrud ut ut cillum adipisicing ullamco exercitation dolore in. Excepteur cupidatat aliquip incididunt tempor sint sint amet duis pariatur exercitation. Enim officia ad ullamco cillum tempor Lorem proident magna aliquip. Ut reprehenderit aute ipsum incididunt irure. Commodo velit sit fugiat adipisicing ipsum dolor.
+## ...welcome home!
+
+In short, Lorecraft is a friendly and welcoming Minecraft server designed to help builders be creative and enjoy themselves. With a supportive community, custom plugins, and powerful servers, we are confident that you will love building and creating with us. So come join us on Discord and start building today!
