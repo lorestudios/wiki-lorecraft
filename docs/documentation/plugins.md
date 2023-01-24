@@ -32,6 +32,36 @@ Veniam dolore aliquip exercitation aliqua et officia exercitation et reprehender
     title="FastAsyncWorldEdit"
     text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
   />
+  <CustomFeatureBox 
+    iconText="🛠️"
+    title="PlotSquared"
+    text="PlotSquared lets us create plot worlds where builders can build in their own areas.Builders can customise their plots with flags to create unique build environments per plot."
+  />
+  <CustomFeatureBox 
+    iconText="🛠️"
+    title="Arceon"
+    text="Arceon is made by the amazing Arcaniax to help bring more advanced tools to FAWE and FAVS including loft, spike, and more..."
+  />
+  <CustomFeatureBox 
+    iconText="🛠️"
+    title="FastAsyncWorldEdit"
+    text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
+  />
+  <CustomFeatureBox 
+    iconText="🛠️"
+    title="PlotSquared"
+    text="PlotSquared lets us create plot worlds where builders can build in their own areas.Builders can customise their plots with flags to create unique build environments per plot."
+  />
+  <CustomFeatureBox 
+    iconText="🛠️"
+    title="Arceon"
+    text="Arceon is made by the amazing Arcaniax to help bring more advanced tools to FAWE and FAVS including loft, spike, and more..."
+  />
+  <CustomFeatureBox 
+    iconText="🛠️"
+    title="FastAsyncWorldEdit"
+    text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
+  />
 </CustomFeature>
 
 ## heading two
