@@ -5,7 +5,7 @@ title: home page
 customHero:
   name: Lorecraft
   text: A builders village.
-  tagline: A friendly community of builders, creating on an up to date Minecraft build server!
+  tagline: A friendly community of builders, creating on an up to date network of Minecraft build servers!
   image:
     src: ./images/logo.png
     alt: Lorecraft Logo
