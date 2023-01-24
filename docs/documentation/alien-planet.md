@@ -10,7 +10,7 @@ title: Alien Planet
 
 <CustomFeature>
   <CustomFeatureBox 
-    iconText="📅"
+    iconImg="./../images/detail.png"
     title="Event Details"
     text="Starts: 02 December 2022
     Ends: 31 December 2022
@@ -18,22 +18,22 @@ title: Alien Planet
     Claim up to 2 plots (only 1 judged)"
   />
   <CustomFeatureBox 
-    iconImg="./../images/money-bag.gif"
+    iconImg="./../images/prize.gif"
     title="$1000 Prize Pool!"
     text="1st: $400 Paypal & $150 Gift Cards (Any Store)
     2nd: $200 Paypal & $100 Gift Cards (Any Store)
     3rd: $100 Paypal & $50 Gift Cards (Any Store)"
   />
-  <CustomFeatureBox 
-    iconImg="./../images/logo.png"
+  <!-- <CustomFeatureBox 
+    iconImg="./../images/detail.png"
     title="Judging Criteria"
     text="Creativity, uniqueness, and originality
     Quality of artistic composition and overall design
     Coloring
     Shape quality
     Visual language"
-  />
-</CustomFeature>
+  /> -->
+</CustomFeature>w
 
 ## Top 3 renders
 
