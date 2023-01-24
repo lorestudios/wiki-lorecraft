@@ -12,38 +12,36 @@ export default {
 
     nav: [
       {text: "Home", link: "/"},
-      {text: "Page One", link: "/documentation/page-one"},
-      {text: "Page Two", link: "/documentation/page-two"},
+      {text: "Guide", link: "/documentation/page-one"},
+      {text: "Sponsers", link: "/documentation/page-two"},
       {
-        text: "Pages",
+        text: "Plugins",
         items: [
-          {text: "Home ", link: "/"},
-          {text: "Page One", link: "/documentation/page-one"},
-          {text: "Page Two", link: "/documentation/page-two"},
-          {text: "Team Page", link: "/team/team-page"},
+          {text: "Standard", link: "/documentation/page-one"},
+          {text: "Custom", link: "/documentation/page-two"},
         ],
       },
     ],
     sidebar: [
       {
-        text: "Doc Page",
+        text: "Welcome",
         collapsible: true,
         items: [
-          {text: "Home", link: "/documentation/"},
-          {text: "Page one", link: "/documentation/page-one"},
-          {text: "Page two", link: "/documentation/page-two"},
+          {text: "Welcome to Lorecraft", link: "/documentation/welcome"},
+          {text: "Getting around", link: "/documentation/page-one"},
+          {text: "Our community", link: "/documentation/page-two"},
         ],
       },
       {
-        text: "Team Page",
+        text: "Tools",
         collapsible: true,
         items: [
-          {text: "Home", link: "/team/"},
-          {text: "Team Page", link: "/team/team-page"},
+          {text: "Our Plugins", link: "/team/"},
+          {text: "Custom Plugins", link: "/team/team-page"},
         ],
       },
       {
-        text: "Integreation",
+        text: "Events",
         collapsible: true,
         items: [
           {text: "Introduction", link: "/introduction"},
