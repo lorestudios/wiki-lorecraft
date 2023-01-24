@@ -18,6 +18,6 @@ Another important aspect of our server is our community. We have a discord serve
 
 We also have powerful servers from OVH located in Canada, providing the best US/EU pings for a worldwide community experience. This ensures that everyone can enjoy building and creating on our server, no matter where they are located.
 
-## ...welcome home!
+## Welcome home!
 
 In short, Lorecraft is a friendly and welcoming Minecraft server designed to help builders be creative and enjoy themselves. With a supportive community, custom plugins, and powerful servers, we are confident that you will love building and creating with us. So come join us on Discord and start building today!
