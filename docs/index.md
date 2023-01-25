@@ -13,7 +13,6 @@ customHero:
     - theme: alt
       text: Guide
       link: /documentation/welcome
-  actions:
     - theme: alt
       text: play.lorecraft.online
   modalButton:
