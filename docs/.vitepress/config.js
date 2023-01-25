@@ -4,12 +4,6 @@ export default {
     logo: "/images/logo32.png",
     siteTitle: "Lorecraft",
 
-    // algolia: {
-    //   appId: "...",
-    //   apiKey: "...",
-    //   indexName: "...",
-    // },
-
     nav: [
       {text: "Home", link: "/"},
       {text: "Guide", link: "/documentation/welcome"},
@@ -47,5 +41,10 @@ export default {
         items: [{text: "Alien Planet", link: "/documentation/alien-planet"}],
       },
     ],
+    footer: {
+      message:
+        'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
+      copyright: "Copyright © 2023 Lore Studios",
+    },
   },
 };

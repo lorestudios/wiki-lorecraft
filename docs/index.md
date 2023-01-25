@@ -1,6 +1,6 @@
 ---
 layout: home
-title: home page
+title: Lorecraft
 
 customHero:
   name: Lorecraft
