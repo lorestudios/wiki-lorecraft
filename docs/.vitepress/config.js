@@ -40,6 +40,7 @@ export default {
         collapsible: true,
         items: [{text: "How To Enter", link: "/documentation/how-to-enter"}],
         items: [{text: "Alien Planet", link: "/documentation/alien-planet"}],
+        items: [{text: "Alien Planet2", link: "/documentation/alien-planet"}],
       },
     ],
     footer: {
