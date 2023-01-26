@@ -1,0 +1,23 @@
+---
+title: Getting Around
+---
+
+# A home for builders!
+
+Welcome to our friendly Minecraft server! Here at Lorecraft, our goal is to create a supportive and enjoyable environment for all builders to let their creativity flow. Our community is made up of like-minded individuals who all share a passion for building and creating in Minecraft. We believe that by fostering a positive and welcoming atmosphere, our members can truly enjoy themselves and build to their full potential.
+
+## Plugins
+
+One of the key features of our server is the use of custom plugins that empower our community to be more productive and creative. These tools allow builders to easily create and build in ways that would not be possible on a traditional Minecraft server. Additionally, our Dev Team is always open to suggestions to improve the experience for our members, and actively works to keep the network running smoothly.
+
+## Discord
+
+Another important aspect of our server is our community. We have a discord server that is always active and buzzing with activity. Here, members can share their builds, give and receive feedback, and just hang out and have fun. The community is incredibly supportive and always willing to lend a helping hand to new members.
+
+## Servers
+
+We also have powerful servers from OVH located in Canada, providing the best US/EU pings for a worldwide community experience. This ensures that everyone can enjoy building and creating on our server, no matter where they are located.
+
+## Welcome home!
+
+In short, Lorecraft is a friendly and welcoming Minecraft server designed to help builders be creative and enjoy themselves. With a supportive community, custom plugins, and powerful servers, we are confident that you will love building and creating with us. So come join us on Discord and start building today!

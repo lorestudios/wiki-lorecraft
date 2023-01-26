@@ -18,10 +18,10 @@ export default {
     ],
     sidebar: [
       {
-        text: "Network",
+        text: "Lorecraft",
         collapsible: true,
         items: [
-          {text: "Welcome to Lorecraft", link: "/documentation/welcome"},
+          {text: "Welcome", link: "/documentation/welcome"},
           {text: "Getting around", link: "/documentation/page-one"},
           {text: "Our community", link: "/documentation/page-two"},
         ],
@@ -38,6 +38,7 @@ export default {
       {
         text: "Events",
         collapsible: true,
+        items: [{text: "How To Enter", link: "/documentation/how-to-enter"}],
         items: [{text: "Alien Planet", link: "/documentation/alien-planet"}],
       },
     ],

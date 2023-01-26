@@ -22,15 +22,6 @@ title: Alien Planet
     2nd: $200 Paypal & $100 Gift Cards (Any Store)
     3rd: $100 Paypal & $50 Gift Cards (Any Store)"
   />
-  <!-- <CustomFeatureBox 
-    iconImg="./../images/detail.png"
-    title="Judging Criteria"
-    text="Creativity, uniqueness, and originality
-    Quality of artistic composition and overall design
-    Coloring
-    Shape quality
-    Visual language"
-  /> -->
 </CustomFeature>
 
 ## Top 3 renders
