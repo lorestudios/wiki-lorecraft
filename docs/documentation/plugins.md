@@ -13,12 +13,12 @@ Lorecraft uses well known and well supported plugins made by Minecraft Devs that
     text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
   />
   <CustomFeatureBox 
-    iconText="🛠️"
+    iconImg="./../images/favs.png"
     title="FastAsyncVoxelSniper"
     text="FastAsyncVoxelSniper (FAVS) is a tool that allows more advanced brushes "
   />
   <CustomFeatureBox 
-    iconText="🛠️"
+    iconImg="./../images/lightcleaner.png"
     title="Light Cleaner"
     text="Arceon is made by the amazing Arcaniax to help bring more advanced tools to FAWE and FAVS including loft, spike, and more..."
   />
