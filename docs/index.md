@@ -13,12 +13,12 @@ customHero:
     - theme: alt
       text: Guide
       link: /documentation/welcome
-    - theme: alt
-      src: ./images/discord.png
-      alt: Discord
-      link: https://discord.gg/3exus-burrow
-    - theme: alt
-      text: play.lorecraft.online
+    # - theme: alt
+    #   src: ./images/discord.png
+    #   alt: Discord
+    #   link: https://discord.gg/3exus-burrow
+    # - theme: alt
+    #   text: play.lorecraft.online
   modalButton:
     theme: brand
     buttonText: Tour
