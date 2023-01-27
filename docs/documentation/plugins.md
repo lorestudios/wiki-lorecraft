@@ -8,7 +8,7 @@ Veniam dolore aliquip exercitation aliqua et officia exercitation et reprehender
 
 <CustomFeature>
   <CustomFeatureBox 
-    iconText="🛠️"
+    iconImg="./../images/fawe.png"
     title="FastAsyncWorldEdit"
     text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
   />
