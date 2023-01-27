@@ -32,6 +32,7 @@ export default {
           {text: "Commands List", link: "/documentation/commands"},
           {text: "Build Plugins", link: "/documentation/plugins"},
           {text: "Custom Plugins", link: "/documentation/custom"},
+          {text: "Managing Schematics", link: "/documentation/schematics"},
         ],
       },
       {
