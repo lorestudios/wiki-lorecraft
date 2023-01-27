@@ -28,16 +28,6 @@ Lorecraft uses well known and well supported plugins made by Minecraft Devs that
     text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
   />
   <CustomFeatureBox 
-    iconText="🛠️"
-    title="Meta Brushes"
-    text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
-  />
-  <CustomFeatureBox 
-    iconText="🛠️"
-    title="Meta Edit"
-    text="PlotSquared lets us create plot worlds where builders can build in their own areas.Builders can customise their plots with flags to create unique build environments per plot."
-  />
-  <CustomFeatureBox 
     iconImg="./../images/gopaint.png"
     title="Go Paint"
     text="Arceon is made by the amazing Arcaniax to help bring more advanced tools to FAWE and FAVS including loft, spike, and more..."
@@ -46,6 +36,16 @@ Lorecraft uses well known and well supported plugins made by Minecraft Devs that
     iconImg="./../images/gobrush.png"
     title="Go Brush"
     text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
+  />
+  <CustomFeatureBox 
+    iconText="🛠️"
+    title="Meta Brushes"
+    text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
+  />
+  <CustomFeatureBox 
+    iconText="🛠️"
+    title="Meta Edit"
+    text="PlotSquared lets us create plot worlds where builders can build in their own areas.Builders can customise their plots with flags to create unique build environments per plot."
   />
   <CustomFeatureBox 
     iconImg="./../images/lightcleaner.png"
