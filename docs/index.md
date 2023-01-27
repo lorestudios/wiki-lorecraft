@@ -15,6 +15,9 @@ customHero:
       link: /documentation/welcome
     - theme: alt
       text: play.lorecraft.online
+    - theme: alt
+      src: ./images/logo32.png
+      alt: Discord
   modalButton:
     theme: brand
     buttonText: Tour
