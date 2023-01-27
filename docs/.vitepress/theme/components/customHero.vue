@@ -40,22 +40,22 @@
           >
             {{ item.text }}
           </a>
-          <iframe
-            src="https://discord.com/widget?id=957645369934766100&theme=dark"
-            width="350"
-            height="500"
-            allowtransparency="true"
-            frameborder="0"
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-          ></iframe>
         </div>
       </article>
       <figure class="w-full lg:w-5/12">
-        <img
+        <iframe
+          src="https://discord.com/widget?id=957645369934766100&theme=light"
+          width="1000"
+          height="1000"
+          allowtransparency="true"
+          frameborder="0"
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+        ></iframe>
+        <!-- <img
           class="w-6/12 sm:w-5/12 mx-auto lg:w-auto"
           :src="page.frontmatter.customHero.image.src"
           :alt="page.frontmatter.customHero.image.alt"
-        />
+        /> -->
       </figure>
     </div>
   </section>
