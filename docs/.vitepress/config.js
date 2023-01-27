@@ -18,12 +18,11 @@ export default {
     ],
     sidebar: [
       {
-        text: "Lorecraft",
+        text: "Welcome",
         collapsible: true,
         items: [
-          {text: "Welcome", link: "/documentation/welcome"},
+          {text: "Our community", link: "/documentation/welcome"},
           {text: "Getting around", link: "/documentation/page-one"},
-          {text: "Our community", link: "/documentation/page-two"},
         ],
       },
       {
