@@ -38,7 +38,7 @@
             class="customBtn medium"
             :class="{brand: item.theme == 'brand', alt: item.theme == 'alt'}"
           >
-            <img class="customBtn medium" src="item.src" :alt="item.alt" />
+            <img class="customBtn medium" :src="item.src" :alt="item.alt" />
             {{ item.text }}
           </a>
         </div>
