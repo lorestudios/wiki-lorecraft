@@ -31,7 +31,7 @@ export default {
         items: [
           {text: "Commands List", link: "/documentation/commands"},
           {
-            text: "Uploading and Downloading",
+            text: "Schematics",
             link: "/documentation/schematics",
           },
           {text: "Build Plugins", link: "/documentation/plugins"},
