@@ -40,7 +40,7 @@
           >
             <img
               class="customBtn medium"
-              :height="100%"
+              height=100%
               src="item.src"
               :alt="item.alt"
             />
