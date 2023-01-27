@@ -23,7 +23,7 @@ Lorecraft uses well known and well supported plugins made by Minecraft Devs that
     text="Arceon is made by the amazing Arcaniax to help bring more advanced tools to FAWE and FAVS including loft, spike, and more..."
   />
   <CustomFeatureBox 
-    iconText="🛠️"
+    iconImg="./../images/plotsquared.svg"
     title="PlotSquared"
     text="PlotSquared lets us create plot worlds where builders can build in their own areas.Builders can customise their plots with flags to create unique build environments per plot."
   />
