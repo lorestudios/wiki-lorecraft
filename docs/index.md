@@ -16,8 +16,9 @@ customHero:
     - theme: alt
       text: play.lorecraft.online
     - theme: alt
-      src: ./images/logo32.png
+      src: ./images/discord.png
       alt: Discord
+      link: https://discord.gg/3exus-burrow
   modalButton:
     theme: brand
     buttonText: Tour
