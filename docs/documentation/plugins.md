@@ -18,16 +18,6 @@ Lorecraft uses well known and well supported plugins made by Minecraft Devs that
     text="FastAsyncVoxelSniper (FAVS) is a tool that allows more advanced brushes "
   />
   <CustomFeatureBox 
-    iconImg="./../images/lightcleaner.png"
-    title="Light Cleaner"
-    text="Arceon is made by the amazing Arcaniax to help bring more advanced tools to FAWE and FAVS including loft, spike, and more..."
-  />
-  <CustomFeatureBox 
-    iconImg="./../images/plotsquared.svg"
-    title="PlotSquared"
-    text="PlotSquared lets us create plot worlds where builders can build in their own areas.Builders can customise their plots with flags to create unique build environments per plot."
-  />
-  <CustomFeatureBox 
     iconImg="./../images/arceon.png"
     title="Arceon"
     text="Arceon is made by the amazing Arcaniax to help bring more advanced tools to FAWE and FAVS including loft, spike, and more..."
@@ -56,5 +46,15 @@ Lorecraft uses well known and well supported plugins made by Minecraft Devs that
     iconImg="./../images/gobrush.png"
     title="Go Brush"
     text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
+  />
+  <CustomFeatureBox 
+    iconImg="./../images/lightcleaner.png"
+    title="Light Cleaner"
+    text="Arceon is made by the amazing Arcaniax to help bring more advanced tools to FAWE and FAVS including loft, spike, and more..."
+  />
+  <CustomFeatureBox 
+    iconImg="./../images/plotsquared.svg"
+    title="PlotSquared"
+    text="PlotSquared lets us create plot worlds where builders can build in their own areas.Builders can customise their plots with flags to create unique build environments per plot."
   />
 </CustomFeature>
