@@ -4,7 +4,7 @@ title: Plugins
 
 # Network Plugins
 
-Veniam dolore aliquip exercitation aliqua et officia exercitation et reprehenderit deserunt dolore irure incididunt veniam. In esse nisi veniam veniam cillum cupidatat incididunt. Adipisicing quis esse aute do occaecat velit nulla nulla sunt ea ipsum. Elit ex laboris irure ea magna proident. Reprehenderit mollit est consequat velit. Fugiat culpa eu eu incididunt nisi officia ullamco nulla labore officia amet occaecat. Non cillum nulla labore deserunt Lorem culpa pariatur eiusmod.
+Lorecraft uses well known and well supported plugins made by Minecraft Devs that have been around for years. We support the development teams of these plugins with donations and appreciate the time they have given the Minecraft community over the years. Check out all the plugins below and visit their Discord servers to show them love!
 
 <CustomFeature>
   <CustomFeatureBox 
