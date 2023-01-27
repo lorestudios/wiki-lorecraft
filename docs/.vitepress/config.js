@@ -30,9 +30,12 @@ export default {
         collapsible: true,
         items: [
           {text: "Commands List", link: "/documentation/commands"},
+          {
+            text: "Uploading and Downloading",
+            link: "/documentation/schematics",
+          },
           {text: "Build Plugins", link: "/documentation/plugins"},
           {text: "Custom Plugins", link: "/documentation/custom"},
-          {text: "Managing Schematics", link: "/documentation/schematics"},
         ],
       },
       {
