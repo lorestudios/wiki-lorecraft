@@ -46,6 +46,17 @@ export default {
           {text: "Alien Planet", link: "/documentation/alien-planet"},
         ],
       },
+      {
+        text: "Tutorials",
+        collapsible: true,
+        items: [
+          {text: "Basic Tools", link: "/documentation/basic-tools"},
+          {text: "Advanced Tools", link: "/documentation/advanced-tools"},
+          {text: "Structures", link: "/documentation/structures"},
+          {text: "Terrain", link: "/documentation/terrain"},
+          {text: "Organics", link: "/documentation/organics"},
+        ],
+      },
     ],
     footer: {
       message:
