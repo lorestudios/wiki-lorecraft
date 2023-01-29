@@ -1,13 +1,5 @@
 ---
 title: Commands
-
-features:
-  - icon: 🛠️
-    title: Simple and minimal, always
-    details: Duis sit qui culpa ex pariatur in voluptate id.
-  - icon: 🛠️
-    title: Another cool feature
-    details: Fugiat excepteur pariatur deserunt incididunt fugiat officia ex aliqua mollit laborum consequat duis mollit incididunt.
 ---
 
 # Commands List
@@ -23,3 +15,10 @@ Lorecraft has a wide range of commands available to players and builders. All co
 | **Telebort Request** | /tbr <player name> | Request to telebort to player          |
 | **Telebort Here**    | /tbh <player name> | Request for player to telebort to you  |
 | **Telebort Accept**  | /tba               | Accept Telebort Request/Here           | -->
+
+| COMMNAND | DESCRIPTION                            |
+| -------- | :------------------------------------- |
+| tb       | Telebort to the xyz coordinates stated |
+| tbr      | Request to telebort to player          |
+| tbh      | Request for player to telebort to you  |
+| tba      | Accept Telebort Request/Here           |
