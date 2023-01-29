@@ -27,8 +27,8 @@ Lorecraft has a wide range of commands available to players and builders. All co
 
 ## Copy|Paste Commands
 
-| NAME          | COMMNAND          | DESCRIPTION                                           |
-| ------------- | ----------------- | :---------------------------------------------------- |
-| **Copy**      | `/wand`           | Gives you a selection wand (Wooden Axe)               |
-| **Lazy Copy** | `/farwand`        | Transforms selection wand to allow distance selecting |
-| **Paste**     | `//1` or `//pos1` | Selects first position of a cuboid area               |
+| NAME          | COMMNAND          | DESCRIPTION                                                                 |
+| ------------- | ----------------- | :-------------------------------------------------------------------------- |
+| **Copy**      | `//copy <-b>`     | Copy selection to clipboard. Use -b to copy biome as well                   |
+| **Lazy Copy** | `//lazycopy <-b>` | Transforms selection wand to allow distance selecting                       |
+| **Paste**     | `//paste <-b>`    | Paste clipboard to position you are standing. Use -b to paste biome as well |
