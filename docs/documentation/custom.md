@@ -12,7 +12,7 @@ features:
 
 # Our Custom Plugins
 
-Lorecraft has developed **TWO** custom plugins to help our network, and they can help yours too!
+Lorecraft has developed **TWO** custom plugins to help our network, and they can help yours too! Both of these custom plugins can be found on Patreon. Try the plugins out at **play.lorecraft.online** and then support and download them from **Patreon** if you find them useful!
 
 <CustomFeature>
   <CustomFeatureBox 
@@ -26,7 +26,3 @@ Lorecraft has developed **TWO** custom plugins to help our network, and they can
     text="Asset Brush is a schematic selection, collection and management tool to let you build your own libraries of schematics!"
   />
 </CustomFeature>
-
-## Support us on Patreon
-
-Both of these custom plugins can be found on Patreon. Try the plugins out at **play.lorecraft.online** and then support and download them from **Patreon** if you find them useful!
