@@ -25,10 +25,13 @@ Lorecraft has a wide range of commands available to players and builders. All co
 | **Position Select 2** | `//2` or `//pos2` | Selects second position of a cuboid area              |
 | **Clear Selection**   | `//none`          | Clears the current selection                          |
 
-## Copy & Paste Commands
+## Clipboard Commands
 
-| NAME          | COMMNAND          | DESCRIPTION                                             |
-| ------------- | ----------------- | :------------------------------------------------------ |
-| **Copy**      | `//copy <-b>`     | Copy to clipboard. Use -b to copy biome                 |
-| **Lazy Copy** | `//lazycopy <-b>` | Transforms selection wand to allow distance selecting   |
-| **Paste**     | `//paste <-b>`    | Paste clipboard to your position. Use -b to paste biome |
+| NAME         | COMMNAND                    | DESCRIPTION                                             |
+| ------------ | --------------------------- | :------------------------------------------------------ |
+| **Copy**     | `//copy [-b] [-m] [-e]`     | Copy to clipboard. Use -b to copy biome                 |
+| **Lazycopy** | `//lazycopy [-b] [-m] [-e]` | Transforms selection wand to allow distance selecting   |
+| **Paste**    | `//paste [-s] [-a] [-o]`    | Paste clipboard to your position. Use -b to paste biome |
+| **Copy**     | `//rotate <y> [x] [z]`      | Copy to clipboard. Use -b to copy biome                 |
+| **Lazycopy** | `//flip [direction]`        | Transforms selection wand to allow distance selecting   |
+| **Paste**    | `//paste [-b]`              | Paste clipboard to your position. Use -b to paste biome |
