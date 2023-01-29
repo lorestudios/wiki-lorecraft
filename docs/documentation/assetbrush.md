@@ -1,8 +1,8 @@
 ---
-title: Structures
+title: Asset Brush
 ---
 
-# Alien Planet - Terraforming Build Competition
+# Asset Brush
 
 3exu's Burrows Terraforming Build Competition was an unforgettable event! It was a dazzling display of skill and artistry from some of the most talented Minecraft artists, builders and terraformers in the world, as well as newer builders who were inspired to create stunning masterpieces. It was an amazing event that left a lasting impression on all who participated, and where new freindships were created.
 
