@@ -25,7 +25,7 @@ Lorecraft has a wide range of commands available to players and builders. All co
 | **Position Select 2** | `//2` or `//pos2` | Selects second position of a cuboid area              |
 | **Clear Selection**   | `//none`          | Clears the current selection                          |
 
-## Copy and Paste Commands
+## Copy|Paste Commands
 
 | NAME          | COMMNAND          | DESCRIPTION                                           |
 | ------------- | ----------------- | :---------------------------------------------------- |
