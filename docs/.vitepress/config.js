@@ -7,12 +7,11 @@ export default {
     nav: [
       {text: "Home", link: "/"},
       {text: "Guide", link: "/documentation/welcome"},
-      {text: "Sponsers", link: "/documentation/page-two"},
       {
         text: "Plugins",
         items: [
-          {text: "Standard", link: "/documentation/page-one"},
-          {text: "Custom", link: "/documentation/page-two"},
+          {text: "Bungee Essentials", link: "/documentation/bungeeessentials"},
+          {text: "Asset Brush", link: "/documentation/assetbrush"},
         ],
       },
     ],
