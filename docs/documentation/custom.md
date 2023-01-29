@@ -10,31 +10,23 @@ features:
     details: Fugiat excepteur pariatur deserunt incididunt fugiat officia ex aliqua mollit laborum consequat duis mollit incididunt.
 ---
 
-# Hi there this is page on
+# Our Custom Plugins
 
-Veniam dolore aliquip exercitation aliqua et officia exercitation et reprehenderit deserunt dolore irure incididunt veniam. In esse nisi veniam veniam cillum cupidatat incididunt. Adipisicing quis esse aute do occaecat velit nulla nulla sunt ea ipsum. Elit ex laboris irure ea magna proident. Reprehenderit mollit est consequat velit. Fugiat culpa eu eu incididunt nisi officia ullamco nulla labore officia amet occaecat. Non cillum nulla labore deserunt Lorem culpa pariatur eiusmod.
+Lorecraft has developed **TWO** custom plugins to help our network, and they can help yours too!
 
 <CustomFeature>
   <CustomFeatureBox 
-    iconText="🛠️"
-    title="Simple and minimal, always"
-    text="Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse."
+    iconImg="./../images/logo.png"
+    title="Bungee Essentials"
+    text="Bungee Essentials is a modern set of network tools designed to help you help your communities!"
   />
   <CustomFeatureBox 
     iconImg="./../images/logo.png"
-    title="Simple and minimal, always"
-    text="Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse."
+    title="Asset Brush"
+    text="Asset Brush is a schematic selection, collection and management tool to let you build your own libraries of schematics!"
   />
 </CustomFeature>
 
-## heading two
+## Support us on Patreon
 
-Labore fugiat cillum consectetur consequat amet commodo duis sunt magna elit laborum. Excepteur Lorem excepteur fugiat cupidatat esse commodo aute in elit nisi. Laborum occaecat mollit sint irure dolore eu incididunt.
-
-### heading three
-
-Ut qui officia eiusmod minim proident incididunt aliqua do do.
-
-## heading two
-
-Aute velit cillum veniam minim nostrud ut ut cillum adipisicing ullamco exercitation dolore in. Excepteur cupidatat aliquip incididunt tempor sint sint amet duis pariatur exercitation. Enim officia ad ullamco cillum tempor Lorem proident magna aliquip. Ut reprehenderit aute ipsum incididunt irure. Commodo velit sit fugiat adipisicing ipsum dolor.
+Both of these custom plugins can be found on Patreon. Try the plugins out at **play.lorecraft.online** and then support and download them from **Patreon** if you find them useful!
