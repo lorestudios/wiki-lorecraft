@@ -24,3 +24,11 @@ Lorecraft has a wide range of commands available to players and builders. All co
 | **Position Select 1** | `//1` or `//pos1` | Selects first position of a cuboid area               |
 | **Position Select 2** | `//2` or `//pos2` | Selects second position of a cuboid area              |
 | **Clear Selection**   | `//none`          | Clears the current selection                          |
+
+## Copy and Paste Commands
+
+| NAME          | COMMNAND          | DESCRIPTION                                           |
+| ------------- | ----------------- | :---------------------------------------------------- |
+| **Copy**      | `/wand`           | Gives you a selection wand (Wooden Axe)               |
+| **Lazy Copy** | `/farwand`        | Transforms selection wand to allow distance selecting |
+| **Paste**     | `//1` or `//pos1` | Selects first position of a cuboid area               |
