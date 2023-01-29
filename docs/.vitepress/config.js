@@ -7,7 +7,6 @@ export default {
     nav: [
       // {text: "Home", link: "/"},
       {text: "Guide", link: "/documentation/welcome"},
-      {text: "Team Test", link: "/documentation/team/index"},
       {
         text: "Plugins",
         items: [
@@ -23,6 +22,7 @@ export default {
         items: [
           {text: "Our community", link: "/documentation/welcome"},
           {text: "Getting around", link: "/documentation/page-one"},
+          {text: "Team Test", link: "/team/index"},
         ],
       },
       {
