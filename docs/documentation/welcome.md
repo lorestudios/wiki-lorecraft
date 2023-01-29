@@ -4,11 +4,29 @@ title: Welcome
 
 # A home for builders!
 
+
 Welcome to our friendly Minecraft server! Here at Lorecraft, our goal is to create a supportive and enjoyable environment for all builders to let their creativity flow. Our community is made up of like-minded individuals who all share a passion for building and creating in Minecraft. We believe that by fostering a positive and welcoming atmosphere, our members can truly enjoy themselves and build to their full potential.
+
+<CustomCta 
+    title="This is cta 2 in doc page"
+    desc="Ea aute laborum est commodo deserunt sint duis est. Veniam culpa laboris cupidatat pariatur irure proident ut enim ea reprehenderit duis elit. Proident cillum id ad occaecat. Cupidatat Lorem enim ea reprehenderit commodo commodo. Mollit laboris duis enim irure ex tempor esse qui sunt ipsum labore sint mollit aute."
+    btnUrl="/"
+    btnText="CTA TWO BTN"
+/>
 
 ## Plugins
 
 One of the key features of our server is the use of custom plugins that empower our community to be more productive and creative. These tools allow builders to easily create and build in ways that would not be possible on a traditional Minecraft server. Additionally, our Dev Team is always open to suggestions to improve the experience for our members, and actively works to keep the network running smoothly.
+
+<CustomCta 
+    title="This is cta 3 in doc page"
+    desc="Ea aute laborum est commodo deserunt sint duis est. Veniam culpa laboris cupidatat pariatur irure proident ut enim ea reprehenderit duis elit. Proident cillum id ad occaecat. Cupidatat Lorem enim ea reprehenderit commodo commodo. Mollit laboris duis enim irure ex tempor esse qui sunt ipsum labore sint mollit aute."
+    btnUrl="/"
+    btnText="CTA THREE"
+    bgColor="indigo"
+    bgImg="../images/lightcleaner.png"
+    overlayOpacity="75"
+/>
 
 ## Discord
 

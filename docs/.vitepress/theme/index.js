@@ -7,6 +7,7 @@ import CustomModal from './components/customModal.vue'
 import CustomHero from './components/customHero.vue'
 import CustomFeature from './components/customFeature.vue'
 import CustomFeatureBox from './components/customFeatureBox.vue'
+import CustomCta from './components/customCta.vue'
 
 export default {
   ...DefaultTheme,
@@ -21,5 +22,6 @@ export default {
     ctx.app.component('CustomHero', CustomHero)
     ctx.app.component('CustomFeature', CustomFeature)
     ctx.app.component('CustomFeatureBox', CustomFeatureBox)
+    ctx.app.component('CustomCta', CustomCta)
   }
 }

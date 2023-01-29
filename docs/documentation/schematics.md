@@ -18,12 +18,27 @@ Veniam dolore aliquip exercitation aliqua et officia exercitation et reprehender
   <CustomFeatureBox 
     iconText="🛠️"
     title="Simple and minimal, always"
-    text="Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse."
+    text="<p>Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse.</p> <p>Exercitation fugiat magna anim qui esse.</p>"
+    btnUrl="/"
+    videoUrl="https://youtu.be/KOnk7Nbqkhs"
   />
   <CustomFeatureBox 
     iconImg="./../images/logo.png"
     title="Simple and minimal, always"
-    text="Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse."
+    text="<p>Est duis aliquip anim occaecat eu mollit nostrud</p><p> exercitation fugiat magna anim qui esse.</p>"
+    videoUrl="https://youtu.be/_uQrJ0TkZlc"
+  />
+  <CustomFeatureBox 
+    iconImg="./../images/logo.png"
+    title="Simple and minimal, always"
+    text="<p>Est duis aliquip anim occaecat eu mollit nostrud</p><p> exercitation fugiat magna anim qui esse.</p>"
+    btnUrl="/"
+  />
+  <CustomFeatureBox 
+    iconImg="./../images/logo.png"
+    title="Simple and minimal, always"
+    text="<p>Est duis aliquip anim occaecat eu mollit nostrud</p><p> exercitation fugiat magna anim qui esse.</p>"
+    btnUrl="https://youtu.be/_uQrJ0TkZlc"
   />
 </CustomFeature>
 
