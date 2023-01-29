@@ -21,7 +21,6 @@ export default {
         items: [
           {text: "Our community", link: "/documentation/welcome"},
           {text: "Getting around", link: "/documentation/getting-around"},
-          {text: "Team Test", link: "/team/index"},
         ],
       },
       {
