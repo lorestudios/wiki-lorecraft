@@ -19,8 +19,8 @@ Lorecraft has a wide range of commands available to players and builders. All co
 
 | NAME                  | COMMNAND          | DESCRIPTION                                           |
 | --------------------- | ----------------- | :---------------------------------------------------- |
-| **Wand**              | `/wand`           | Gives you a selection wand (Wooden Axe)               |
-| **Farand**            | `/farwand`        | Transforms selection wand to allow distance selecting |
+| **Selection Wand**    | `/wand`           | Gives you a selection wand (Wooden Axe)               |
+| **Farwand**           | `/farwand`        | Transforms selection wand to allow distance selecting |
 | **Position Select 1** | `//1` or `//pos1` | Selects first position of a cuboid area               |
 | **Position Select 2** | `//2` or `//pos2` | Selects second position of a cuboid area              |
 | **Clear Selection**   | `//none`          | Clears the current selection                          |
