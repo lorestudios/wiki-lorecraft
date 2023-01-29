@@ -5,7 +5,7 @@ export default {
     siteTitle: "Lorecraft",
 
     nav: [
-      {text: "Home", link: "/"},
+      // {text: "Home", link: "/"},
       {text: "Guide", link: "/documentation/welcome"},
       {text: "Team Test", link: "/documentation/team/index"},
       {
