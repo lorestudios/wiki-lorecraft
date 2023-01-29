@@ -15,9 +15,12 @@ Lorecraft has a wide range of commands available to players and builders. All co
 | **Telebort Here**    | `/tbh <player name>` | Request for player to telebort to you  |
 | **Telebort Accept**  | `/tba`               | Accept Telebort Request/Here           |
 
-<!-- | COMMNAND | DESCRIPTION                            |
-| -------- | :------------------------------------- |
-| tb       | Telebort to the xyz coordinates stated |
-| tbr      | Request to telebort to player          |
-| tbh      | Request for player to telebort to you  |
-| tba      | Accept Telebort Request/Here           | -->
+## Selection Commands
+
+| NAME                  | COMMNAND          | DESCRIPTION                                           |
+| --------------------- | ----------------- | :---------------------------------------------------- |
+| **Wand**              | `/wand`           | Gives you a selection wand (Wooden Axe)               |
+| **Farand**            | `/farwand`        | Transforms selection wand to allow distance selecting |
+| **Position Select 1** | `//1` or `//pos1` | Selects first position of a cuboid area               |
+| **Position Select 2** | `//2` or `//pos2` | Selects second position of a cuboid area              |
+| **Clear Selection**   | `//none`          | Clears the current selection                          |
