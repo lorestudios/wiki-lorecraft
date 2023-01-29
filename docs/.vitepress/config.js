@@ -21,7 +21,7 @@ export default {
         collapsible: true,
         items: [
           {text: "Our community", link: "/documentation/welcome"},
-          {text: "Getting around", link: "/documentation/page-one"},
+          {text: "Getting around", link: "/documentation/getting-around"},
           {text: "Team Test", link: "/team/index"},
         ],
       },
