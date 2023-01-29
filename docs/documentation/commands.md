@@ -27,10 +27,10 @@ Lorecraft has a wide range of commands available to players and builders. All co
 
 ## Clipboard Commands
 
-| NAME         | COMMNAND                    | DESCRIPTION                                             |
-| ------------ | --------------------------- | :------------------------------------------------------ |
-| **Copy**     | `//copy [-b] [-m] [-e]`     | Copy to clipboard. Use -b to copy biome /n Test         |
-| **Lazycopy** | `//lazycopy [-b] [-m] [-e]` | Transforms selection wand to allow distance selecting   |
-| **Paste**    | `//paste [-s] [-a] [-o]`    | Paste clipboard to your position. Use -b to paste biome |
-| **Rotate**   | `//rotate <y> [x] [z]`      | Copy to clipboard. Use -b to copy biome                 |
-| **Flip**     | `//flip [direction]`        | Transforms selection wand to allow distance selecting   |
+| NAME         | COMMNAND                    | DESCRIPTION                                           |
+| ------------ | --------------------------- | :---------------------------------------------------- |
+| **Copy**     | `//copy [-b] [-m] [-e]`     | Copy to clipboard. Use -b to copy biome /n Test       |
+| **Lazycopy** | `//lazycopy [-b] [-m] [-e]` | Transforms selection wand to allow distance selecting |
+| **Paste**    | `//paste [-s] [-a] [-o]`    | Paste clipboard to your position.                     |
+| **Rotate**   | `//rotate <y> [x] [z]`      | Rotates clipboard. Use 360 degrees eg. `//rotate 90`  |
+| **Flip**     | `//flip [direction]`        | Flips clipboard in direction `[left]` `[right]`       |
