@@ -55,43 +55,43 @@
 </template>
 
 <style>
+.customHero {
+  margin-top: calc(
+    (var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1
+  );
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px)
+    24px 60px;
+}
+
+@media only screen and (min-width: 640px) {
   .customHero {
-    margin-top: calc(
-      (var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1
-    );
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px)
-      24px 60px;
+    padding: calc(
+        var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px
+      )
+      48px 75px;
   }
+}
 
-  @media only screen and (min-width: 640px) {
-    .customHero {
-      padding: calc(
-          var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px
-        )
-        48px 75px;
-    }
+@media only screen and (min-width: 960px) {
+  .customHero {
+    padding: calc(
+        var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px
+      )
+      64px 75px;
   }
+}
 
-  @media only screen and (min-width: 960px) {
-    .customHero {
-      padding: calc(
-          var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px
-        )
-        64px 75px;
-    }
-  }
+.customName {
+  color: var(--vp-home-hero-name-color);
+}
 
-  .customName {
-    color: var(--vp-home-hero-name-color);
-  }
-
-  .customText {
-    color: var(--vp-c-text-1);
-  }
-  .customTagline {
-    white-space: pre-wrap;
-    color: var(--vp-c-text-2);
-  }
+.customText {
+  color: var(--vp-c-text-1);
+}
+.customTagline {
+  white-space: pre-wrap;
+  color: var(--vp-c-text-2);
+}
 </style>
 
 <script setup>
