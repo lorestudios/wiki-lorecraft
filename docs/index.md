@@ -26,15 +26,14 @@ customHero:
     videoTitle: This is new title
 
 customCta:
-  title: Thjis is title
-  desc: Ea aute laborum est commodo deserunt sint duis est. Veniam culpa laboris cupidatat pariatur irure proident ut enim ea reprehenderit duis elit. Proident cillum id ad occaecat. Cupidatat Lorem enim ea reprehenderit commodo commodo. Mollit laboris duis enim irure ex tempor esse qui sunt ipsum labore sint mollit aute.
+  title:
+  desc:
   btnText: Home Cta
   btnUrl: /asdf
   bgImg: ./images/logo.png
   bgColor: green
   overlayOpacity: 90
   textColor: white
-
 
 features:
   - icon: 🏕️
