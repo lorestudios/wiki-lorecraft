@@ -18,9 +18,9 @@ title: Alien Planet
   <CustomFeatureBox 
     iconImg="./../images/prize.gif"
     title="$1000 Prize Pool!"
-    text="<p>1st: $400 Paypal & $150 Gift Cards (Any Store)</p>
-    <p>2nd: $200 Paypal & $100 Gift Cards (Any Store)</p>
-    <p>3rd: $100 Paypal & $50 Gift Cards (Any Store)</p>"
+    text="<p>1st: $400 Paypal & $150 Gift Cards</p>
+    <p>2nd: $200 Paypal & $100 Gift Cards</p>
+    <p>3rd: $100 Paypal & $50 Gift Cards</p>"
   />
 </CustomFeature>
 
