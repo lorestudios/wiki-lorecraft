@@ -26,8 +26,8 @@ export default {
     socialLinks: [{icon: "discord", link: "https://discord.com/"}],
     nav: [
       {text: "Lorecraft", link: "/documentation/welcome"},
-      {text: "Marketplace", link: "/documentation/welcome"},
-      {text: "Lore Online", link: "/documentation/welcome"},
+      {text: "Marketplace", link: "/documentation/marketplace"},
+      {text: "Lore Online", link: "/documentation/loreonline"},
       {
         text: "Plugins",
         items: [
