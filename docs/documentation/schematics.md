@@ -14,33 +14,33 @@ features:
 
 Veniam dolore aliquip exercitation aliqua et officia exercitation et reprehenderit deserunt dolore irure incididunt veniam. In esse nisi veniam veniam cillum cupidatat incididunt. Adipisicing quis esse aute do occaecat velit nulla nulla sunt ea ipsum. Elit ex laboris irure ea magna proident. Reprehenderit mollit est consequat velit. Fugiat culpa eu eu incididunt nisi officia ullamco nulla labore officia amet occaecat. Non cillum nulla labore deserunt Lorem culpa pariatur eiusmod.
 
-<!-- <CustomFeature>
-  <CustomFeatureBox
-    iconText=""
-    title="Test video"
-    text=""
-    btnUrl=""
+<CustomFeature>
+  <CustomFeatureBox 
+    iconText="🛠️"
+    title="Simple and minimal, always"
+    text="<p>Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse.</p> <p>Exercitation fugiat magna anim qui esse.</p>"
+    btnUrl="/"
     videoUrl="https://youtu.be/KOnk7Nbqkhs"
   />
-  <CustomFeatureBox
+  <CustomFeatureBox 
     iconImg="./../images/logo.png"
     title="Simple and minimal, always"
     text="<p>Est duis aliquip anim occaecat eu mollit nostrud</p><p> exercitation fugiat magna anim qui esse.</p>"
     videoUrl="https://youtu.be/_uQrJ0TkZlc"
   />
-  <CustomFeatureBox
+  <CustomFeatureBox 
     iconImg="./../images/logo.png"
     title="Simple and minimal, always"
     text="<p>Est duis aliquip anim occaecat eu mollit nostrud</p><p> exercitation fugiat magna anim qui esse.</p>"
     btnUrl="/"
   />
-  <CustomFeatureBox
+  <CustomFeatureBox 
     iconImg="./../images/logo.png"
     title="Simple and minimal, always"
     text="<p>Est duis aliquip anim occaecat eu mollit nostrud</p><p> exercitation fugiat magna anim qui esse.</p>"
     btnUrl="https://youtu.be/_uQrJ0TkZlc"
   />
-</CustomFeature> -->
+</CustomFeature>
 
 ## heading two
 
