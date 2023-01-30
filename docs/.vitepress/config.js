@@ -1,22 +1,33 @@
 export default {
   base: "/",
-  title: "Lorecraft",
+  title: "Lore Studios",
 
   head: [
-    ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/images/logo32.png"}],
-    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/images/logo32.png"}],
+    [
+      "link",
+      {rel: "apple-touch-icon", sizes: "180x180", href: "/images/logo32.png"},
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: "/images/logo32.png",
+      },
+    ],
   ],
-  
+
   themeConfig: {
     logo: "/images/logo32.png",
-    siteTitle: "Lorecraft",
+    siteTitle: "Lore Studios",
     outlineTitle: " ",
 
-    socialLinks: [
-      { icon: 'discord', link: 'https://discord.com/' },
-    ],
+    socialLinks: [{icon: "discord", link: "https://discord.com/"}],
     nav: [
-      {text: "Guide", link: "/documentation/welcome"},
+      {text: "Lorecraft", link: "/documentation/welcome"},
+      {text: "Marketplace", link: "/documentation/welcome"},
+      {text: "Lore", link: "/documentation/welcome"},
       {
         text: "Plugins",
         items: [
