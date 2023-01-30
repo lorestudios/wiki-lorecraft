@@ -1,11 +1,11 @@
 ---
 layout: home
-title: Lore Studios
+title: Lorecraft
 
 customHero:
-  name: Lore Studios
-  text: Crafting Worlds.
-  tagline: Home of Lorecraft, Lore Online, and the Lore Studios Marketplace catalogue!
+  name: Lorecraft
+  text: A builders village.
+  tagline: A friendly community of builders, creating on an up to date network of Minecraft build servers!
   image:
     src: ./images/logo.png
     alt: Lorecraft Logo
@@ -13,21 +13,17 @@ customHero:
     - theme: alt
       text: Guide
       link: /documentation/welcome
+    # - theme: alt
+    #   src: ./images/discord.png
+    #   alt: Discord
+    #   link: https://discord.gg/3exus-burrow
+    # - theme: alt
+    #   text: play.lorecraft.online
   modalButton:
     theme: brand
     buttonText: Tour
     videoUrl: https://www.youtube.com/embed/RhAoLSX9n1Y
     videoTitle: This is new title
-
-# customCta:
-#   title:
-#   desc:
-#   btnText: Home Cta
-#   btnUrl: /asdf
-#   bgImg: ./images/logo.png
-#   bgColor: green
-#   overlayOpacity: 90
-#   textColor: white
 
 features:
   - icon: 🏕️
