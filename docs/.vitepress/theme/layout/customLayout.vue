@@ -5,13 +5,14 @@
     </template>
     <template #home-features-before>
       <CustomCta 
-        title="Thjis is title"
-        desc="Ea aute laborum est commodo deserunt sint duis est. Veniam culpa laboris cupidatat pariatur irure proident ut enim ea reprehenderit duis elit. Proident cillum id ad occaecat. Cupidatat Lorem enim ea reprehenderit commodo commodo. Mollit laboris duis enim irure ex tempor esse qui sunt ipsum labore sint mollit aute."
-        btnUrl="/"
-        bgColor="green"
-        textColor="white"
-        bgImg="./images/logo.png"
-        overlayOpacity="90"
+        :title="page.frontmatter.customCta.title"
+        :desc="page.frontmatter.customCta.desc"
+        :btnUrl="page.frontmatter.customCta.btnUrl"
+        :btnText="page.frontmatter.customCta.btnText"
+        :bgColor="page.frontmatter.customCta.bgColor"
+        :textColor="page.frontmatter.customCta.textColor"
+        :bgImg="page.frontmatter.customCta.bgImg"
+        :overlayOpacity="page.frontmatter.customCta.overlayOpacity"
       />
     </template>
   </Layout>
@@ -19,6 +20,9 @@
 
 <script setup>
 import DefaultTheme from 'vitepress/theme'
+import {useData} from "vitepress";
 
 const { Layout } = DefaultTheme
+
+const {page} = useData();
 </script>
