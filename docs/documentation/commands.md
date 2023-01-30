@@ -8,12 +8,12 @@ Lorecraft has a wide range of commands available to players and builders. All co
 
 ## Navigation Commands
 
-| NAME                 | COMMNAND             | DESCRIPTION                            |
-| -------------------- | -------------------- | :------------------------------------- |
-| **Telebort**         | `/tb <x> <y> <z>`    | Telebort to the xyz coordinates stated |
+| NAME                 |       COMMNAND       | DESCRIPTION                            |
+| -------------------- | :------------------: | :------------------------------------- |
+| **Telebort**         |  `/tb <x> <y> <z>`   | Telebort to the xyz coordinates stated |
 | **Telebort Request** | `/tbr <player name>` | Request to telebort to player          |
 | **Telebort Here**    | `/tbh <player name>` | Request for player to telebort to you  |
-| **Telebort Accept**  | `/tba`               | Accept Telebort Request/Here           |
+| **Telebort Accept**  |        `/tba`        | Accept Telebort Request/Here           |
 
 ## Selection Commands
 
