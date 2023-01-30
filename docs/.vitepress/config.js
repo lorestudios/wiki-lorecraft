@@ -27,7 +27,7 @@ export default {
     nav: [
       {text: "Lorecraft", link: "/documentation/welcome"},
       {text: "Marketplace", link: "/documentation/welcome"},
-      {text: "Lore", link: "/documentation/welcome"},
+      {text: "Lore Online", link: "/documentation/welcome"},
       {
         text: "Plugins",
         items: [
