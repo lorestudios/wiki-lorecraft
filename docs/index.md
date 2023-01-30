@@ -19,15 +19,15 @@ customHero:
     videoUrl: https://www.youtube.com/embed/RhAoLSX9n1Y
     videoTitle: This is new title
 
-customCta:
-  title:
-  desc:
-  btnText: Home Cta
-  btnUrl: /asdf
-  bgImg: ./images/logo.png
-  bgColor: green
-  overlayOpacity: 90
-  textColor: white
+# customCta:
+#   title:
+#   desc:
+#   btnText: Home Cta
+#   btnUrl: /asdf
+#   bgImg: ./images/logo.png
+#   bgColor: green
+#   overlayOpacity: 90
+#   textColor: white
 
 features:
   - icon: 🏕️

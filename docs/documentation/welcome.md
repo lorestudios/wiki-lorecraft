@@ -1,9 +1,22 @@
 ---
 title: Welcome
+
+features:
+  - icon: 🏕️
+    title: Friendly Community
+    details: Welcome to the Lorecraft community! We support each other to be the best builders and level designers we can be. Join us on discord!
+  - icon: 🧰
+    title: Custom Plugins
+    details: Lorecraft empowers our community with custom plugins enhancing productivity and creativity, making building and creating more enjoyable.
+  - icon: 👩‍💻
+    title: Active Dev Team
+    details: Our Dev Team is open to suggestions to improve your experience and actively works to keep the network running as smoothly as possible!
+  - icon: 🌍
+    title: Powerful Servers
+    details: We use powerful servers from OVH located in Canada, giving us the best US/EU pings for a worldwide community experience!
 ---
 
 # A home for builders!
-
 
 Welcome to our friendly Minecraft server! Here at Lorecraft, our goal is to create a supportive and enjoyable environment for all builders to let their creativity flow. Our community is made up of like-minded individuals who all share a passion for building and creating in Minecraft. We believe that by fostering a positive and welcoming atmosphere, our members can truly enjoy themselves and build to their full potential.
 
