@@ -16,10 +16,10 @@ Veniam dolore aliquip exercitation aliqua et officia exercitation et reprehender
 
 <CustomFeature>
   <CustomFeatureBox 
-    iconText="🛠️"
-    title="Simple and minimal, always"
-    text="<p>Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse.</p> <p>Exercitation fugiat magna anim qui esse.</p>"
-    btnUrl="/"
+    iconText=""
+    title="Test video"
+    text=""
+    btnUrl=""
     videoUrl="https://youtu.be/KOnk7Nbqkhs"
   />
   <CustomFeatureBox 
