@@ -8,6 +8,8 @@ import CustomHero from './components/customHero.vue'
 import CustomFeature from './components/customFeature.vue'
 import CustomFeatureBox from './components/customFeatureBox.vue'
 import CustomCta from './components/customCta.vue'
+import CustomImage from './components/customImage.vue'
+import CustomCode from './components/customCode.vue'
 
 export default {
   ...DefaultTheme,
@@ -23,5 +25,7 @@ export default {
     ctx.app.component('CustomFeature', CustomFeature)
     ctx.app.component('CustomFeatureBox', CustomFeatureBox)
     ctx.app.component('CustomCta', CustomCta)
+    ctx.app.component('CustomImage', CustomImage)
+    ctx.app.component('cc', CustomCode)
   }
 }

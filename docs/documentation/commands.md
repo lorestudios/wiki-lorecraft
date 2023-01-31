@@ -8,18 +8,18 @@ Lorecraft has a wide range of commands available to players and builders. All co
 
 ## Navigation Commands
 
-| NAME                 |       COMMNAND       | DESCRIPTION                            |
-| -------------------- | :------------------: | :------------------------------------- |
-| **Telebort**         |  `/tb <x> <y> <z>`   | Telebort to the xyz coordinates stated |
-| **Telebort Request** | `/tbr <player name>` | Request to telebort to player          |
-| **Telebort Here**    | `/tbh <player name>` | Request for player to telebort to you  |
-| **Telebort Accept**  |        `/tba`        | Accept Telebort Request/Here           |
+| NAME                 |          COMMNAND          | DESCRIPTION                            |
+| -------------------- | :------------------------: | :------------------------------------- |
+| **Telebort**         | <cc>`/tb <x> <y> <z>`</cc> | Telebort to the xyz coordinates stated |
+| **Telebort Request** |    `/tbr <player name>`    | Request to telebort to player          |
+| **Telebort Here**    |    `/tbh <player name>`    | Request for player to telebort to you  |
+| **Telebort Accept**  |           `/tba`           | Accept Telebort Request/Here           |
 
 ## Selection Commands
 
 | NAME                  | COMMNAND          | DESCRIPTION                                           |
 | --------------------- | ----------------- | :---------------------------------------------------- |
-| **Selection Wand**    | `/wand`           | Gives you a selection wand (Wooden Axe)               |
+| **Selection Wand**    | <cc>`/wand`</cc>           | Gives you a selection wand (Wooden Axe)               |
 | **Farwand**           | `/farwand`        | Transforms selection wand to allow distance selecting |
 | **Position Select 1** | `//1` or `//pos1` | Selects first position of a cuboid area               |
 | **Position Select 2** | `//2` or `//pos2` | Selects second position of a cuboid area              |

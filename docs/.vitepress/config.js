@@ -1,6 +1,6 @@
 export default {
   base: "/",
-  title: "Lorecraft",
+  title: " ",
 
   head: [
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/images/logo32.png"}],
