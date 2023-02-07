@@ -34,16 +34,27 @@
             :videTitle="modalButton.videoTitle"
             :theme="modalButton.theme"
           />
-
-          <a
-            v-for="item in actions"
-            :href="item.link"
-            class="customBtn medium"
-            :class="{'brand': item.theme == 'brand', 'alt': item.theme == 'alt'}"
-          >
-            <img class="customBtn medium" :src="item.src" :alt="item.alt" />
-            {{ item.text }}
-          </a>
+          <div v-for="item in actions">
+            <a
+              v-if="item.allowCopy == 'true' || item.allowCopy == 'True'"
+              @click="copyURL(item.link)"
+              class="customBtn medium block cursor-pointer relative overflow-hidden"
+              :class="{'brand': item.theme == 'brand', 'alt': item.theme == 'alt'}"
+            >
+              <img class="customBtn medium" :src="item.src" :alt="item.alt" />
+              {{ item.text }}
+              <span class="copyText" :class="{'opacity-100': showCopied==true}">Copied</span>
+            </a>
+            <a
+              v-else
+              :href="item.link"
+              class="customBtn medium block cursor-pointer"
+              :class="{'brand': item.theme == 'brand', 'alt': item.theme == 'alt'}"
+            >
+              <img class="customBtn medium" :src="item.src" :alt="item.alt" />
+              {{ item.text }}
+            </a>
+          </div>
         </div>
       </article>
       <figure v-if="image" class="w-full lg:w-5/12">
@@ -102,6 +113,12 @@
 // const {page} = useData();
 
 export default {
+  data() {
+    return {
+      showCopied: false,
+    }
+  },
+
   props: {
     name: String,
     text: String,
@@ -109,6 +126,22 @@ export default {
     image: Object,
     actions: Array,
     modalButton: Object,
+  },
+
+  methods: {
+    async copyURL(mytext) {
+      try {
+        await navigator.clipboard.writeText(mytext);
+        
+        this.showCopied = true;
+        let vm = this;
+        setTimeout(function() {
+            vm.showCopied = false;
+        }, 500);
+      } catch($e) {
+        alert('Cannot copy');
+      }
+    },
   },
 }
 </script>

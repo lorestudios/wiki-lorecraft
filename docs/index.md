@@ -11,8 +11,13 @@ customHero:
     alt: Lorecraft Logo
   actions:
     - theme: alt
-      text: Guide
+      text: Guide Copy
       link: /documentation/welcome
+      allowCopy: 'true'
+    - theme: alt
+      text: Guide Link
+      link: /documentation/welcome
+      allowCopy: 'false'
     # - theme: alt
     #   src: ./images/discord.png
     #   alt: Discord
@@ -34,6 +39,9 @@ customCta:
   bgColor: green
   overlayOpacity: '90'
   textColor: white
+  marginTop: 30px
+  marginBottom: 100px
+  allowCopy: 'True'
 
 features:
   - icon: 🏕️

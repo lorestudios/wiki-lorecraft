@@ -20,6 +20,9 @@
         :textColor="page.frontmatter.customCta.textColor"
         :bgImg="page.frontmatter.customCta.bgImg"
         :overlayOpacity="page.frontmatter.customCta.overlayOpacity"
+        :marginTop="page.frontmatter.customCta.marginTop"
+        :marginBottom="page.frontmatter.customCta.marginBottom"
+        :allowCopy="page.frontmatter.customCta.allowCopy"
       />
     </template>
   </Layout>

@@ -27,6 +27,10 @@ Welcome to our friendly Minecraft server! Here at Lorecraft, our goal is to crea
     btnUrl="https://github.com/"
     allowCopy=True
     btnText="Click to copy"
+    marginLeft="20px"
+    marginRight="20px"
+    marginTop="100px"
+    marginBottom="100px"
 />
 
 ## Plugins
@@ -41,6 +45,10 @@ One of the key features of our server is the use of custom plugins that empower 
     bgColor="indigo"
     bgImg="../images/lightcleaner.png"
     overlayOpacity="75"
+    marginLeft="0"
+    marginRight="0"
+    marginTop="50px"
+    marginBottom="20px"
 />
 
 ## Discord

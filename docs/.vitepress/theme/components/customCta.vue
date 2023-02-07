@@ -1,8 +1,8 @@
 <template>
     <section
         id="customCta" 
-        class="relative py-24 my-24 bg-cover bg-center bg-no-repeat"
-        :style="bgStyle(bg_img, bgColor)"
+        class="relative py-24 bg-cover bg-center bg-no-repeat"
+        :style="bgStyle(bg_img)"
     >
         <span
             v-if="bg_img"
@@ -27,11 +27,17 @@
                 
                 <a  
                     v-if="allowCopy == 'true' || allowCopy == 'True'"
-                    class="ctaBtn bg-transparent border-2 border-white py-3 px-8 rounded-full font-medium text-lg md:text-xl duration-300 transform hover:scale-95 cursor-pointer"
+                    class="relative overflow-hidden ctaBtn bg-transparent border-2 border-white py-3 px-8 rounded-full font-medium text-lg md:text-xl duration-300 transform hover:scale-95 cursor-pointer"
                     :style="textStyle(textColor)"
                     @click="copyURL(btnUrl)"
                 >
                     {{btnText}}
+                    <span 
+                        class="copyText" :class="{'opacity-100': showCopied==true}"
+                        :style="{'background-color': `${this.bgColor}`,}"
+                    >
+                        Copied
+                    </span>
                 </a>
 
                 <a 
@@ -72,6 +78,12 @@
 export default {
     name: "cta",
 
+    data() {
+        return {
+            showCopied: false,
+        }
+    },
+
     props: {
         title: String,
         desc: String,
@@ -97,6 +109,22 @@ export default {
             type: String,
             default: "white",
         },
+        marginTop: {
+            type: String,
+            default: '80px'
+        },
+        marginBottom: {
+            type: String,
+            default: '80px'
+        },
+        marginLeft: {
+            type: String,
+            default: '0px'
+        },
+        marginRight: {
+            type: String,
+            default: '0px'
+        },
     },
 
     computed: {
@@ -111,15 +139,24 @@ export default {
         async copyURL(mytext) {
             try {
                 await navigator.clipboard.writeText(mytext);
-                alert('Link copied to clipboard');
+                
+                this.showCopied = true;
+                let vm = this;
+                setTimeout(function() {
+                    vm.showCopied = false;
+                }, 500);
             } catch($e) {
                 alert('Cannot copy');
             }
         },
-        bgStyle(bgImg, bgColor) {
+        bgStyle(bgImg) {
             return {
                 'background-image': `url(${bgImg})`,
-                'background-color': `${bgColor}`
+                'background-color': `${this.bgColor}`,
+                'margin-top': `${this.marginTop}`,
+                'margin-bottom': `${this.marginBottom}`,
+                'margin-left': `${this.marginLeft}`,
+                'margin-right': `${this.marginRight}`,
             }
         },
         overlayStyle(ovColor, ovOpacity) {
