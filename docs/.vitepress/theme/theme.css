@@ -45,6 +45,7 @@
 
     .copyText {
         background-color: var(--vp-button-brand-bg);
+        color: var(--vp-button-brand-text);
         @apply absolute top-0 left-0 right-0 bottom-0 block flex items-center justify-center duration-300 opacity-0;
     }
 }

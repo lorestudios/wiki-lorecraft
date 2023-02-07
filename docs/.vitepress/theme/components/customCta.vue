@@ -34,7 +34,7 @@
                     {{btnText}}
                     <span 
                         class="copyText" :class="{'opacity-100': showCopied==true}"
-                        :style="{'background-color': `${bgColor}`,}"
+                        :style="{'background-color': `${bgColor};`, 'color': `${textColor};`}"
                     >
                         Copied
                     </span>
