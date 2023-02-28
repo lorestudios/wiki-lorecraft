@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Lorecraft
+title: Lore Studios
 
 customHero:
   name: Lorecraft
@@ -13,11 +13,11 @@ customHero:
     - theme: alt
       text: Guide Copy
       link: /documentation/welcome
-      allowCopy: 'true'
+      allowCopy: "true"
     - theme: alt
       text: Guide Link
       link: /documentation/welcome
-      allowCopy: 'false'
+      allowCopy: "false"
     # - theme: alt
     #   src: ./images/discord.png
     #   alt: Discord
@@ -37,11 +37,11 @@ customCta:
   btnUrl: /
   bgImg: ./images/logo.png
   bgColor: green
-  overlayOpacity: '90'
+  overlayOpacity: "90"
   textColor: white
   marginTop: 30px
   marginBottom: 100px
-  allowCopy: 'True'
+  allowCopy: "True"
 
 features:
   - icon: 🏕️
