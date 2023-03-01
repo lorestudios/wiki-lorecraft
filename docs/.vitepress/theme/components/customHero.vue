@@ -3,7 +3,7 @@
     <div
       class="container flex flex-col-reverse lg:flex-row items-center justify-between gap-8 sm:gap-10 xl:gap-12"
     >
-      <article class="w-full lg:w-7/12 text-center lg:text-left">
+      <article class="w-full lg:w-10/12 text-center lg:text-left">
         <h1>
           <span
             v-if="name"
@@ -39,17 +39,21 @@
               v-if="item.allowCopy == 'true' || item.allowCopy == 'True'"
               @click="copyURL(item.link)"
               class="customBtn medium block cursor-pointer relative overflow-hidden"
-              :class="{'brand': item.theme == 'brand', 'alt': item.theme == 'alt'}"
+              :class="{brand: item.theme == 'brand', alt: item.theme == 'alt'}"
             >
               <img class="customBtn medium" :src="item.src" :alt="item.alt" />
               {{ item.text }}
-              <span class="copyText" :class="{'opacity-100': showCopied==true}">Copied</span>
+              <span
+                class="copyText"
+                :class="{'opacity-100': showCopied == true}"
+                >Copied</span
+              >
             </a>
             <a
               v-else
               :href="item.link"
               class="customBtn medium block cursor-pointer"
-              :class="{'brand': item.theme == 'brand', 'alt': item.theme == 'alt'}"
+              :class="{brand: item.theme == 'brand', alt: item.theme == 'alt'}"
             >
               <img class="customBtn medium" :src="item.src" :alt="item.alt" />
               {{ item.text }}
@@ -69,43 +73,43 @@
 </template>
 
 <style>
+.customHero {
+  margin-top: calc(
+    (var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1
+  );
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px)
+    24px 60px;
+}
+
+@media only screen and (min-width: 640px) {
   .customHero {
-    margin-top: calc(
-      (var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1
-    );
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px)
-      24px 60px;
+    padding: calc(
+        var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px
+      )
+      48px 75px;
   }
+}
 
-  @media only screen and (min-width: 640px) {
-    .customHero {
-      padding: calc(
-          var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px
-        )
-        48px 75px;
-    }
+@media only screen and (min-width: 960px) {
+  .customHero {
+    padding: calc(
+        var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px
+      )
+      64px 75px;
   }
+}
 
-  @media only screen and (min-width: 960px) {
-    .customHero {
-      padding: calc(
-          var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px
-        )
-        64px 75px;
-    }
-  }
+.customName {
+  color: var(--vp-home-hero-name-color);
+}
 
-  .customName {
-    color: var(--vp-home-hero-name-color);
-  }
-
-  .customText {
-    color: var(--vp-c-text-1);
-  }
-  .customTagline {
-    white-space: pre-wrap;
-    color: var(--vp-c-text-2);
-  }
+.customText {
+  color: var(--vp-c-text-1);
+}
+.customTagline {
+  white-space: pre-wrap;
+  color: var(--vp-c-text-2);
+}
 </style>
 
 <script>
@@ -116,7 +120,7 @@ export default {
   data() {
     return {
       showCopied: false,
-    }
+    };
   },
 
   props: {
@@ -132,16 +136,16 @@ export default {
     async copyURL(mytext) {
       try {
         await navigator.clipboard.writeText(mytext);
-        
+
         this.showCopied = true;
         let vm = this;
-        setTimeout(function() {
-            vm.showCopied = false;
+        setTimeout(function () {
+          vm.showCopied = false;
         }, 500);
-      } catch($e) {
-        alert('Cannot copy');
+      } catch ($e) {
+        alert("Cannot copy");
       }
     },
   },
-}
+};
 </script>

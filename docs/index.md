@@ -1,59 +1,53 @@
 ---
 layout: home
-title: Lore Studios
+title: Home
 
 customHero:
-  name: Lorecraft
-  text: A builders village.
-  tagline: A friendly community of builders, creating on an up to date network of Minecraft build servers!
+  name: LORE STUDIOS
+  text: Beautiful Games.
+  tagline: An Official Minecraft Partner creating unique and playful experiences for Minecraft Education and the Minecraft Marketplace.
   image:
     src: ./images/logo.png
     alt: Lorecraft Logo
-  actions:
-    - theme: alt
-      text: Guide Copy
-      link: /documentation/welcome
-      allowCopy: "true"
-    - theme: alt
-      text: Guide Link
-      link: /documentation/welcome
-      allowCopy: "false"
-    # - theme: alt
-    #   src: ./images/discord.png
-    #   alt: Discord
-    #   link: https://discord.gg/3exus-burrow
-    # - theme: alt
-    #   text: play.lorecraft.online
-  modalButton:
-    theme: brand
-    buttonText: Tour
-    videoUrl: https://www.youtube.com/embed/RhAoLSX9n1Y
-    videoTitle: This is new title
+  # actions:
+  #   - theme: brand
+  #     text: play.lorecraft.online
+  #     link: play.lorecraft.online
+  #     allowCopy: "true"
+  # modalButton:
+  #   theme: brand
+  #   buttonText: Tour
+  #   videoUrl: https://www.youtube.com/embed/RhAoLSX9n1Y
+  #   videoTitle: This is new title
 
 customCta:
-  title: This is title
-  desc: Ea aute laborum est commodo deserunt sint duis est. Veniam culpa laboris cupidatat pariatur irure proident ut enim ea reprehenderit duis elit. Proident cillum id ad occaecat. Cupidatat Lorem enim ea reprehenderit commodo commodo. Mollit laboris duis enim irure ex tempor esse qui sunt ipsum labore sint mollit aute.
-  btnText: Home Cta
-  btnUrl: /
+  title: Join our Discord Community!
+  desc:
+  btnText: Join
+  btnUrl: https://discord.gg/lorestudios
   bgImg: ./images/logo.png
-  bgColor: green
+  # bgColor: blue
   overlayOpacity: "90"
   textColor: white
   marginTop: 30px
   marginBottom: 100px
-  allowCopy: "True"
+  allowCopy: "False"
 
 features:
-  - icon: 🏕️
-    title: Friendly Community
-    details: Welcome to the Lorecraft community! We support each other to be the best builders and level designers we can be. Join us on discord!
-  - icon: 🧰
-    title: Custom Plugins
-    details: Lorecraft empowers our community with custom plugins enhancing productivity and creativity, making building and creating more enjoyable.
-  - icon: 👩‍💻
-    title: Active Dev Team
-    details: Our Dev Team is open to suggestions to improve your experience and actively works to keep the network running as smoothly as possible!
-  - icon: 🌍
-    title: Powerful Servers
-    details: We use powerful servers from OVH located in Canada, giving us the best US/EU pings for a worldwide community experience!
+  - icon:
+      src: ./../images/partner.png
+    title: Official Minecraft Partner
+    details: Lore Studios is an Official Minecraft Partner, creating unique experiences for Minecraft, Minecraft Education, and Minecraft Java.
+  - icon:
+      src: ./../images/marketplace.png
+    title: Marketplace Content
+    details: We have a rich library of content ready for players to explore and enjoy, and more content being created by our passionate team of creators!
+  - icon:
+      src: ./../images/education.svg
+    title: Educational Experiences
+    details: Creating unique and engaging educational experiences in Minecraft for learners around the world is what we love to do, and was the start of our journey.
+  - icon:
+      src: ./../images/build.png
+    title: Lorecraft Build Server
+    details: Lorecraft is our community build server. With regular events and crazy large building spaces, it is a haven for creativity and imagination!
 ---

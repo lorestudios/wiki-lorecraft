@@ -5,56 +5,62 @@ title: Plugins
 # Network Plugins
 
 Lorecraft uses well known and well supported plugins made by Minecraft Devs that have been around for years. We support the development teams of these plugins with donations and appreciate the time they have given the Minecraft community over the years. Check out all the plugins below and visit their Discord servers to show them love!
-
 <CustomFeature>
-  <CustomFeatureBox 
+<CustomFeatureBox 
     iconImg="./../images/fawe.png"
     title="FastAsyncWorldEdit"
     text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
+    btnUrl="/lkm"
+    videoUrl="https://youtu.be/afGbrIBFDHQ"
   />
-  <CustomFeatureBox 
-    iconImg="./../images/favs.png"
-    title="FastAsyncVoxelSniper"
-    text="FastAsyncVoxelSniper (FAVS) is a tool that allows more advanced brushes "
-  />
-  <CustomFeatureBox 
+<CustomFeatureBox 
     iconImg="./../images/arceon.png"
     title="Arceon"
     text="Arceon is made by the amazing Arcaniax to help bring more advanced tools to FAWE and FAVS including loft, spike, and more..."
+    btnUrl="/lkm"
+    videoUrl="https://youtu.be/LZO5ryNVSNc?t=122"
   />
-  <CustomFeatureBox 
-    iconImg="./../images/buildersutilities.png"
-    title="Builder Utilities"
-    text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
-  />
-  <CustomFeatureBox 
-    iconImg="./../images/gopaint.png"
-    title="Go Paint"
-    text="Arceon is made by the amazing Arcaniax to help bring more advanced tools to FAWE and FAVS including loft, spike, and more..."
-  />
-  <CustomFeatureBox 
+<CustomFeatureBox 
     iconImg="./../images/gobrush.png"
     title="Go Brush"
-    text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
+    text="GoBrush helps builders quickly and easily generate interesting and complex terrain with a suite of easy to use brushes and brush settings."
+    btnUrl="/lkm"
+    videoUrl="https://youtu.be/ns_E_Nly-VU"
   />
-  <CustomFeatureBox 
-    iconText="🛠️"
+<CustomFeatureBox 
+    iconImg="./../images/gopaint.png"
+    title="Go Paint"
+    text="GoPaint helps builders to create beautiful and interesting color work in their builds, from gradients to sweeping color edits... This is the tool for artists!"
+    btnUrl="/"
+    videoUrl="https://youtu.be/RUp0mX50FIU"
+  />
+<CustomFeatureBox 
+    iconImg="./../images/favs.png"
+    title="FastAsyncVoxelSniper"
+    text="FastAsyncVoxelSniper (FAVS) is a tool that adds more advanced brushes to the builders toolbox!"
+  />
+<CustomFeatureBox 
+    iconImg="./../images/buildersutilities.png"
+    title="Builder Utilities"
+    text="Builders Utilities adds pletnty of shortcuts to build servers and simplified world options like disabling gravity, redstone,and leaf decay."
+  />
+<CustomFeatureBox 
+    iconText="🖌️"
     title="Meta Brushes"
-    text="FastAsyncWorldEdit (FAWE) is the main build tool for most Minecraft builders and is actively developed by the amazing team at Intellectual Sites"
+    text="Meta Brushes is yet another tool that brings extra brushes that are extremely useful for terrain building and large environment design."
   />
-  <CustomFeatureBox 
-    iconText="🛠️"
+<CustomFeatureBox 
+    iconText="⚙️"
     title="Meta Edit"
-    text="PlotSquared lets us create plot worlds where builders can build in their own areas.Builders can customise their plots with flags to create unique build environments per plot."
+    text="Meta Edit brings some unique selection edits to build servers that allows builders to create amazing natural features like erosion and terrain smoothing"
   />
-  <CustomFeatureBox 
+<CustomFeatureBox 
     iconImg="./../images/lightcleaner.png"
     title="Light Cleaner"
-    text="Arceon is made by the amazing Arcaniax to help bring more advanced tools to FAWE and FAVS including loft, spike, and more..."
-  />
-  <CustomFeatureBox 
+    text="Light Cleaner is a simple tool to help with lighting glitches in larger and complex more builds. The tool runs passively in the background"/>
+<CustomFeatureBox 
     iconImg="./../images/plotsquared.svg"
     title="PlotSquared"
-    text="PlotSquared lets us create plot worlds where builders can build in their own areas.Builders can customise their plots with flags to create unique build environments per plot."
+    text="PlotSquared lets builders build in their own private areas. Builders can customise their plots with flags to change things like biomes, time and weather."
   />
 </CustomFeature>

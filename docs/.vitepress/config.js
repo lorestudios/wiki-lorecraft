@@ -1,6 +1,6 @@
 export default {
   base: "/",
-  title: " ",
+  title: "Lore Studios",
 
   head: [
     [
@@ -21,17 +21,21 @@ export default {
   themeConfig: {
     logo: "/images/logo32.png",
     siteTitle: "Lore Studios",
-    outlineTitle: " ",
+    outlineTitle: "",
 
-    socialLinks: [{icon: "discord", link: "https://discord.com/"}],
+    socialLinks: [{icon: "discord", link: "https://discord.gg/lorestudios"}],
     nav: [
-      {text: "Guide", link: "/documentation/welcome"},
       {
-        text: "Plugins",
-        items: [
-          {text: "Bungee Essentials", link: "/documentation/bungeeessentials"},
-          {text: "Asset Brush", link: "/documentation/assetbrush"},
-        ],
+        text: "Marketplace",
+        link: "/documentation/organics",
+      },
+      {
+        text: "Education",
+        link: "https://www.pikistudios.com/",
+      },
+      {
+        text: "Lorecraft",
+        link: "/documentation/welcome",
       },
     ],
     sidebar: [
@@ -64,17 +68,17 @@ export default {
           {text: "Alien Planet", link: "/documentation/alien-planet"},
         ],
       },
-      {
-        text: "Tutorials",
-        collapsible: true,
-        items: [
-          {text: "Basic Tools", link: "/documentation/basic-tools"},
-          {text: "Advanced Tools", link: "/documentation/advanced-tools"},
-          {text: "Structures", link: "/documentation/structures"},
-          {text: "Terrain", link: "/documentation/terrain"},
-          {text: "Organics", link: "/documentation/organics"},
-        ],
-      },
+      // {
+      //   text: "Tutorials",
+      //   collapsible: true,
+      //   items: [
+      // {text: "Basic Tools", link: "/documentation/basic-tools"},
+      // {text: "Advanced Tools", link: "/documentation/advanced-tools"},
+      // {text: "Structures", link: "/documentation/structures"},
+      // {text: "Terrain", link: "/documentation/terrain"},
+      // {text: "Organics", link: "/documentation/organics"},
+      //   ],
+      // },
     ],
     footer: {
       message:

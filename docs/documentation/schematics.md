@@ -1,55 +1,43 @@
 ---
 title: Schematics
-
-features:
-  - icon: 🛠️
-    title: Simple and minimal, always
-    details: Duis sit qui culpa ex pariatur in voluptate id.
-  - icon: 🛠️
-    title: Another cool feature
-    details: Fugiat excepteur pariatur deserunt incididunt fugiat officia ex aliqua mollit laborum consequat duis mollit incididunt.
 ---
 
-# Hi there this is page on
+# Schematics
 
-Veniam dolore aliquip exercitation aliqua et officia exercitation et reprehenderit deserunt dolore irure incididunt veniam. In esse nisi veniam veniam cillum cupidatat incididunt. Adipisicing quis esse aute do occaecat velit nulla nulla sunt ea ipsum. Elit ex laboris irure ea magna proident. Reprehenderit mollit est consequat velit. Fugiat culpa eu eu incididunt nisi officia ullamco nulla labore officia amet occaecat. Non cillum nulla labore deserunt Lorem culpa pariatur eiusmod.
+Schematics are how we save and share builds in Minecraft (Java Edition). You can download schematics directly from Lorecraft or upload ones you have on your PC to Lorecraft to work on! You can also download whole plots in certain plot worlds (Gardens, Meadows, and Plains).
 
-<CustomFeature>
-  <CustomFeatureBox 
-    iconText="🛠️"
-    title="Simple and minimal, always"
-    text="<p>Est duis aliquip anim occaecat eu mollit nostrud exercitation fugiat magna anim qui esse.</p> <p>Exercitation fugiat magna anim qui esse.</p>"
-    btnUrl="/"
-    videoUrl="https://youtu.be/KOnk7Nbqkhs"
-  />
-  <CustomFeatureBox 
-    iconImg="./../images/logo.png"
-    title="Simple and minimal, always"
-    text="<p>Est duis aliquip anim occaecat eu mollit nostrud</p><p> exercitation fugiat magna anim qui esse.</p>"
-    videoUrl="https://youtu.be/_uQrJ0TkZlc"
-  />
-  <CustomFeatureBox 
-    iconImg="./../images/logo.png"
-    title="Simple and minimal, always"
-    text="<p>Est duis aliquip anim occaecat eu mollit nostrud</p><p> exercitation fugiat magna anim qui esse.</p>"
-    btnUrl="/"
-  />
-  <CustomFeatureBox 
-    iconImg="./../images/logo.png"
-    title="Simple and minimal, always"
-    text="<p>Est duis aliquip anim occaecat eu mollit nostrud</p><p> exercitation fugiat magna anim qui esse.</p>"
-    btnUrl="https://youtu.be/_uQrJ0TkZlc"
-  />
-</CustomFeature>
+## Uploading schematics
 
-## heading two
+To upload schematics visit https://schematic.lorecraft.online/. Simply click on the browse button and select the **schematic file** from your PC (schematic files have the extension _.schem_ or _.schematic_) and upload! You will be given a key that you can add to the following command:
 
-Labore fugiat cillum consectetur consequat amet commodo duis sunt magna elit laborum. Excepteur Lorem excepteur fugiat cupidatat esse commodo aute in elit nisi. Laborum occaecat mollit sint irure dolore eu incididunt.
+**`//schem load schem url:<download key>`**
 
-### heading three
+<CustomImage
+    src="../images/schematic_key.png"
+    alt="logo"
+    width="100%"
+    height="auto"
+    opacity="100"
+    alignFrom="center"
+    isBg="false"
+    marginTop="50px"
+    marginBottom="10px"
+    marginLeft="0px"
+    marginRight="20px"
+/>
 
-Ut qui officia eiusmod minim proident incididunt aliqua do do.
+## Downloading Schematics
 
-## heading two
+To download a **schematic** you first need to select a region and add it to your clipboard. `//pos1` in one corner of your selection area, and then `//pos2` in the opposite corner, followed by `//copy` to save the selection to the clipboard.
 
-Aute velit cillum veniam minim nostrud ut ut cillum adipisicing ullamco exercitation dolore in. Excepteur cupidatat aliquip incididunt tempor sint sint amet duis pariatur exercitation. Enim officia ad ullamco cillum tempor Lorem proident magna aliquip. Ut reprehenderit aute ipsum incididunt irure. Commodo velit sit fugiat adipisicing ipsum dolor.
+Then run the following command and open the link in your chat window in game:
+
+**`/download`**
+
+## Downloading Plots
+
+To download a plot, make sure you are in one of the worlds that has this feature enabled (Gardens, Meadows, and Plains). This will allow you to download a whole plot to a schematic file, where you can use at home or in other servers!
+
+Simply run the following command and open the link in your chat window in game:
+
+**`//plot download`**
