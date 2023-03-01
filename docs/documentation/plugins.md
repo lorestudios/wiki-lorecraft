@@ -2,7 +2,7 @@
 title: Plugins
 ---
 
-# Network Plugins
+# Our Build Plugins
 
 Lorecraft uses well known and well supported plugins made by Minecraft Devs that have been around for years. We support the development teams of these plugins with donations and appreciate the time they have given the Minecraft community over the years. Check out all the plugins below and visit their Discord servers to show them love!
 <CustomFeature>
