@@ -1,6 +1,7 @@
 // .vitepress/theme/index.js
 import DefaultTheme from 'vitepress/theme'
 import './theme.css'
+import VueSplide from '@splidejs/vue-splide';
 
 import CustomLayout from './layout/customLayout.vue'
 import CustomModal from './components/customModal.vue'
@@ -23,6 +24,9 @@ export default {
   enhanceApp(ctx) {
     // extend default theme custom behaviour.
     DefaultTheme.enhanceApp(ctx)
+
+    // registering the carousel
+    ctx.app.use(VueSplide)
 
     // register your custom global components
     ctx.app.component('CustomModal', CustomModal)

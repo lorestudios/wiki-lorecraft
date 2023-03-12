@@ -14,7 +14,7 @@
                     <img
                         v-if="!item.videoLink && item.image"
                         style="max-height: 60vh;"
-                        class="w-6/12 md:w-auto mx-auto lg:ml-0"
+                        class="w-full"
                         :src="item.image"
                         alt="image.alt"
                     />
@@ -79,7 +79,9 @@
 <script>
 import '@splidejs/vue-splide/css';
 import '@splidejs/vue-splide/css/core';
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
+// import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import pkg from '@splidejs/vue-splide';
+const { Splide, SplideSlide } = pkg;
 
 import products from '../../../../products.json'
 
