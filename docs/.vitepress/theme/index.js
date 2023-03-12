@@ -10,6 +10,11 @@ import CustomFeatureBox from './components/customFeatureBox.vue'
 import CustomCta from './components/customCta.vue'
 import CustomImage from './components/customImage.vue'
 import CustomCode from './components/customCode.vue'
+import CustomCarousel from './components/customCarousel.vue'
+import CustomProductGrid from './components/customProductGrid.vue'
+import CustomProductItem from './components/customProductItem.vue'
+import CustomProductFeature from './components/customProductFeature.vue'
+import CustomProductFeatureBox from './components/customProductFeatureBox.vue'
 
 export default {
   ...DefaultTheme,
@@ -27,5 +32,11 @@ export default {
     ctx.app.component('CustomCta', CustomCta)
     ctx.app.component('CustomImage', CustomImage)
     ctx.app.component('cc', CustomCode)
+    ctx.app.component('CustomCarousel', CustomCarousel)
+    ctx.app.component('CustomProductGrid', CustomProductGrid)
+    ctx.app.component('CustomProductItem', CustomProductItem)
+    ctx.app.component('CustomProductFeature', CustomProductFeature)
+    ctx.app.component('CustomProductFeatureBox', CustomProductFeatureBox)
+    
   }
 }

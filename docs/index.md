@@ -43,7 +43,7 @@ features:
     title: Marketplace Content
     details: We have a rich library of content ready for players to explore and enjoy, and more content being created by our passionate team of creators!
   - icon:
-      src: ./../images/education.svg
+      src: ./../images/education.png
     title: Educational Experiences
     details: Creating unique and engaging educational experiences in Minecraft for learners around the world is what we love to do, and was the start of our journey.
   - icon:

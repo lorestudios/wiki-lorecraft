@@ -19,7 +19,7 @@ Lorecraft has a wide range of commands available to players and builders. All co
 
 | NAME        |          COMMNAND          | DESCRIPTION               |
 | ----------- | :------------------------: | :------------------------ |
-| **Speed**   | <cc>`/speed <1 - 10>`</cc> | Adjust walk and fly speed |
+| **Speed**   | <cc>/speed <1 - 10></cc> | Adjust walk and fly speed |
 | **No Clip** |       <cc>`/nc`</cc>       | Fly through blocks        |
 
 <!-- ## Navigation Commands
@@ -53,3 +53,11 @@ Lorecraft has a wide range of commands available to players and builders. All co
 | **Paste**    | `//paste [-s] [-a] [-o]`    | Paste clipboard to your position                |
 | **Rotate**   | `//rotate <y> [x] [z]`      | Rotates clipboard. eg. `//rotate 90`            |
 | **Flip**     | `//flip [direction]`        | Flips clipboard in direction `[left]` `[right]` |
+
+
+
+## Copy code outside the table
+
+you have to use "&lt" instead of "<". Otherwise the browser will read this as html tag not a string.
+
+<cc>`/tp  &ltx >  &lty >  &ltz >`</cc>

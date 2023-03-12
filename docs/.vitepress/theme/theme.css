@@ -48,6 +48,13 @@
         color: var(--vp-button-brand-text);
         @apply absolute top-0 left-0 right-0 bottom-0 block flex items-center justify-center duration-300 opacity-0;
     }
+
+    .customBg {
+        background-color: var(--vp-c-brand);
+    }
+    .customHoverBg:hover {
+        background-color: var(--vp-button-brand-hover-bg);
+    }
 }
 
 
@@ -72,4 +79,10 @@
         max-width: calc(100% - 50px)!important;
         border-radius: 6px!important;
     }
+}
+
+.VPFeature .VPImage {
+    width: 48px!important;
+    height: 48px!important;
+    object-fit: contain;
 }

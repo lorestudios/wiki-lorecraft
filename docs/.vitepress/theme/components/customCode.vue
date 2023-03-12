@@ -1,6 +1,8 @@
 <template>
     <div @click="copyCode" class="customCode relative inline-block duration-100 hover:scale-110 cursor-pointer rounded-md overflow-hidden" ref="customCode">
-        <slot />
+        <code>
+            <slot />
+        </code>
         <span class="copyText text-xs" :class="{'opacity-100': showCopied==true}" >Copied</span>
     </div>
 </template>

@@ -28,5 +28,8 @@
     }
   },
   "repository": "git@github.com:lorestudios/wiki-lorecraft.git",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12"
+  }
 }
