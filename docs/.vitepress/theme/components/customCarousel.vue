@@ -79,9 +79,9 @@
 <script>
 import '@splidejs/vue-splide/css';
 import '@splidejs/vue-splide/css/core';
-// import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import pkg from '@splidejs/vue-splide';
-const { Splide, SplideSlide } = pkg;
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+// import pkg from '@splidejs/vue-splide';
+// const { Splide, SplideSlide } = pkg;
 
 import products from '../../../../products.json'
 
