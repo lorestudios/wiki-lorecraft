@@ -30,6 +30,6 @@
   "repository": "git@github.com:lorestudios/wiki-lorecraft.git",
   "private": true,
   "dependencies": {
-    "@splidejs/vue-splide": "^0.6.12"
+    "vue3-carousel": "^0.2.12"
   }
 }

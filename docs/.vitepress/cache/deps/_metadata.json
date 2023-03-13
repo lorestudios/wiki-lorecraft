@@ -1,17 +1,17 @@
 {
-  "hash": "59e66cc8",
-  "browserHash": "757d9aa8",
+  "hash": "4ebf80af",
+  "browserHash": "cac02a51",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "7c425c5c",
+      "fileHash": "8dbab69c",
       "needsInterop": false
     },
-    "@splidejs/vue-splide": {
-      "src": "../../../../node_modules/@splidejs/vue-splide/dist/js/vue-splide.esm.js",
-      "file": "@splidejs_vue-splide.js",
-      "fileHash": "a39fbe87",
+    "vue3-carousel": {
+      "src": "../../../../node_modules/vue3-carousel/dist/carousel.es.js",
+      "file": "vue3-carousel.js",
+      "fileHash": "981b0c30",
       "needsInterop": false
     }
   },

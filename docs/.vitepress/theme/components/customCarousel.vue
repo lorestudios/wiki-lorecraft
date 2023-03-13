@@ -33,6 +33,16 @@
             </div>
         </div>
     </section>
+    <carousel :items-to-show="1.5">
+        <slide v-for="slide in 10" :key="slide">
+        {{ slide }}
+        </slide>
+
+        <template #addons>
+        <navigation />
+        <pagination />
+        </template>
+    </carousel>
     <!-- <Splide
         class="customBg py-20 text-white text-center md:text-left px-8" 
         :options="{ rewind: true }" 
@@ -111,14 +121,9 @@
 </style>
 
 <script>
-// import '@splidejs/vue-splide/css';
-// import '@splidejs/vue-splide/css/core';
-// import { Splide, SplideSlide } from '@splidejs/vue-splide';
-
-// import pkg from '@splidejs/vue-splide';
-// const { Splide, SplideSlide } = pkg;
-
 import products from '../../../../products.json'
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 
 export default {
@@ -135,11 +140,6 @@ export default {
         },
     },
 
-    // components: {
-    //     Splide,
-    //     SplideSlide,
-    // },
-
     methods: {
         thumbUrl(url) {
             var videoId = url.match(/youtu\.be.*(\?v=|\/)(.{11})/);
@@ -151,13 +151,11 @@ export default {
         }
     },
 
-    setup() {
-        const options = {
-            rewind: true,
-            gap   : '1rem',
-        };
-
-        return { options };
+    components: {
+        Carousel,
+        Slide,
+        Pagination,
+        Navigation,
     },
 }
 </script>
