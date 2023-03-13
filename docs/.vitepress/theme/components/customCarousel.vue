@@ -10,7 +10,7 @@
                     <img
                         style="max-height: 60vh;"
                         class="w-6/12 md:w-auto mx-auto lg:ml-0"
-                        src="images/detail.gif"
+                        src="public/images/detail.gif"
                         alt="image.alt"
                     />
                 </figure>
