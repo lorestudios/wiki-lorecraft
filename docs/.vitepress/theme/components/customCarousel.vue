@@ -1,5 +1,39 @@
 <template>
-    <Splide
+    <section
+        class="customBg py-20 text-white text-center md:text-left px-8" 
+    >
+        <div
+            class="flex items-center"
+        >
+            <div class="container flex flex-col md:flex-row items-center gap-14 md:gap-10 lg:gap-14">
+                <figure class="relative w-full md:w-6/12">
+                    <img
+                        style="max-height: 60vh;"
+                        class="w-6/12 md:w-auto mx-auto lg:ml-0"
+                        src="images/detail.gif"
+                        alt="image.alt"
+                    />
+                </figure>
+                <article class="max-w-2xl md:max-w-full w-full md:w-6/12">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight sm:leading-tight lg:leading-tight">
+                        This the product title
+                    </h1>
+                    <div 
+                        class="mt-6 text-lg md:text-xl space-y-4" 
+                    >
+                        Gsectetur exercitation excepteur occaecat aliqua deserunt aliqua ullamco aliquip. Culpa et excepteur ad adipisicing nostrud sint eu ad veniam. Eiusmod culpa labore aliqua proident. Proident cillum adipisicing aliqua quis laborum nisi ut sunt laborum dolor qui aute.
+                    </div>
+                    <a
+                        href="/" 
+                        class="carouselBtn mt-7 inline-block ctaBtn bg-transparent border-2 border-white py-3 px-8 rounded-full font-medium text-lg md:text-xl duration-300 transform hover:scale-95 cursor-pointer"
+                    >
+                        Buy This
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- <Splide
         class="customBg py-20 text-white text-center md:text-left px-8" 
         :options="{ rewind: true }" 
         aria-label="My Favorite Images"
@@ -54,7 +88,7 @@
                 </article>
             </div>
         </SplideSlide>
-    </Splide>
+    </Splide> -->
 </template>
 
 <style>
@@ -77,12 +111,12 @@
 </style>
 
 <script>
-import '@splidejs/vue-splide/css';
-import '@splidejs/vue-splide/css/core';
+// import '@splidejs/vue-splide/css';
+// import '@splidejs/vue-splide/css/core';
 // import { Splide, SplideSlide } from '@splidejs/vue-splide';
 
-import pkg from '@splidejs/vue-splide';
-const { Splide, SplideSlide } = pkg;
+// import pkg from '@splidejs/vue-splide';
+// const { Splide, SplideSlide } = pkg;
 
 import products from '../../../../products.json'
 
@@ -101,10 +135,10 @@ export default {
         },
     },
 
-    components: {
-        Splide,
-        SplideSlide,
-    },
+    // components: {
+    //     Splide,
+    //     SplideSlide,
+    // },
 
     methods: {
         thumbUrl(url) {
