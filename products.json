@@ -16,7 +16,7 @@
         "btnText": "",
         "btnLink": "/",
         "videoLink": "",
-        "image": "./../images/plugins.png",
+        "image": "./../images/wonder.png",
         "tags": ["technology", "fruit", "food", "blog"]
     },
     {
@@ -26,17 +26,17 @@
         "btnText": "Click",
         "btnLink": "/",
         "videoLink": "",
-        "image": "./../images/build.png",
+        "image": "./../images/wonder.png",
         "tags": ["develop", "fruit", "food", "blog"]
     },
     {
-        "isFeatured": false,
+        "isFeatured": true,
         "title": "Blue berry mango",
         "desc": "Deserunt qui non aliquip consectetur cillum deserunt. Mollit sunt Lorem anim ea nisi consectetur minim laborum eiusmod. Qui ex sint labore qui et velit. Commodo anim fugiat dolor Lorem consectetur anim exercitation velit deserunt eu ea ipsum pariatur. Veniam magna qui amet cillum quis deserunt aute do. Incididunt dolore labore duis cillum.",
         "btnText": "Click",
         "btnLink": "/",
         "videoLink": "",
-        "image": "./../images/community.png",
+        "image": "./../images/wonder.png",
         "tags": ["develop", "fruit", "food", "blog"]
     },
     {

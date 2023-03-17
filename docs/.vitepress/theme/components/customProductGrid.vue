@@ -15,7 +15,7 @@
                         </svg>
                     </span>
                 </div>
-                <div class="flex flex-col sm:flex-row items-center gap-5">
+                <div class="flex flex-col sm:flex-row items-center gap-8">
                     <div class="w-full sm:w-6/12 lg:w-auto customBorder px-4 py-2 flex items-center gap-2">
                         <p>
                             Filter:
@@ -28,7 +28,7 @@
                                 All Tags
                             </option>
                             <option
-                                v-for="item in page.frontmatter.productGrid.tagOptions" 
+                                v-for="item in tags" 
                                 :key="item"
                                 :value="item"
                             >
@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="px-8">
-            <div class="container mt-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div class="container mt-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <CustomProductItem
                     v-if="sortedProduct.length > 0" 
                     v-for="item in sortedProduct"
@@ -111,7 +111,10 @@ export default {
     },
 
     props: {
-        tags: Array,
+        productType: {
+            type: String,
+            default: 'all',
+        },
     },
 
     computed: {
@@ -149,6 +152,18 @@ export default {
                     if (fa < fb) {return 1}return 0
                 })
             }
+        },
+        tags() {
+            const oldArr = this.sortedProduct.map(x => x.tags.map(y => y))
+            const newArr = [];
+
+            for(let i = 0; i<oldArr.length; i++) {
+                for(let j = 0; j<oldArr[i].length; j++) {
+                    newArr.push(oldArr[i][j]);
+                } 
+            } 
+            
+            return [ ...new Set(newArr) ]
         }
     },
 }

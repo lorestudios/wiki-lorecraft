@@ -1,11 +1,20 @@
 <template>
-    <div class="videoModal">
-        <button @click="openModal" :class="{'brand': theme=='brand', 'alt': theme=='alt'}" class="customBtn medium flex items-center gap-1">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-            </svg>
-            {{ buttonText }}
-        </button>
+    <button v-if="tourBtn" @click="openModal" :class="{'brand': theme=='brand', 'alt': theme=='alt'}" class="customBtn medium flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+        </svg>
+        {{ buttonText }}
+    </button>
+    <button v-if="playBtn" @click="openModal" :class="{'brand': theme=='brand', 'alt': theme=='alt'}" class="customBtn pl-3 p-2.5 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+        </svg>
+    </button>
+    <button v-if="!tourBtn && !playBtn" @click="openModal" :class="{'brand': theme=='brand', 'alt': theme=='alt'}" class="customBtn medium">
+        {{ buttonText }}
+    </button>
+    
+    <Teleport to="body">
         <div v-if="show" class="modalBox fixed top-0 left-0 right-0 bottom-0 z-50 flex items-center justify-center">
             <span @click="closeModal" class="modalBg fixed top-0 left-0 right-0 bottom-0 z-0" />
             <span @click="closeModal" class="block text-white fixed top-3 md:top-4 right-3 md:right-4 bg-red-400 z-50 p-1 rounded-full cursor-pointer hover:opacity-80 duration-300">
@@ -34,12 +43,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </Teleport>
 </template>
 
 <style>
     .modalBox {
-        z-index: 999;
+        z-index: 9999;
     }
     .modalBg {
         background-color: #545454b3;
@@ -69,13 +78,21 @@ export default {
             type: String,
             default: "Tour",
         },
+        tourBtn: {
+            type: Boolean,
+            defalt: false,             
+        },
+        playBtn: {
+            type: Boolean,
+            defalt: false,             
+        },
     },
 
     computed: {
-        // a computed getter
         finalUrl() {
-            if(this.videoUrl) {
-                return this.videoUrl+'?autoplay=1';
+            var videoId = this.videoUrl.match(/youtu\.be.*(\?v=|\/)(.{11})/).pop();
+            if(videoId) {
+                return 'https://www.youtube.com/embed/'+videoId+'?autoplay=1';
             }
         }
     },

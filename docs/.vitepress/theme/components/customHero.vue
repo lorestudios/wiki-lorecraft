@@ -33,6 +33,7 @@
             :videoUrl="modalButton.videoUrl"
             :videTitle="modalButton.videoTitle"
             :theme="modalButton.theme"
+            :tourBtn="true"
           />
           <div v-for="item in actions">
             <a

@@ -36,7 +36,6 @@ export default {
     ctx.app.component('CustomProductGrid', CustomProductGrid)
     ctx.app.component('CustomProductItem', CustomProductItem)
     ctx.app.component('CustomProductFeature', CustomProductFeature)
-    ctx.app.component('CustomProductFeatureBox', CustomProductFeatureBox)
-    
+    ctx.app.component('CustomProductFeatureBox', CustomProductFeatureBox)    
   }
 }

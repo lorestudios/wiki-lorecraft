@@ -1,122 +1,58 @@
 <template>
-    <section
-        class="customBg py-20 text-white text-center md:text-left px-8" 
-    >
-        <div
-            class="flex items-center"
+    <section class="customBg pt-20 pb-32 text-white text-center md:text-left px-8">
+        <carousel
+            :items-to-show="1"
+            :autoplay="5000"
+            :mouseDrag="true"
         >
-            <div class="container flex flex-col md:flex-row items-center gap-14 md:gap-10 lg:gap-14">
-                <figure class="relative w-full md:w-6/12">
-                    <img
-                        style="max-height: 60vh;"
-                        class="w-6/12 md:w-auto mx-auto lg:ml-0"
-                        src="/images/detail.gif"
-                        alt="image.alt"
-                    />
-                </figure>
-                <article class="max-w-2xl md:max-w-full w-full md:w-6/12">
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight sm:leading-tight lg:leading-tight">
-                        This the product title
-                    </h1>
-                    <div 
-                        class="mt-6 text-lg md:text-xl space-y-4" 
-                    >
-                        Gsectetur exercitation excepteur occaecat aliqua deserunt aliqua ullamco aliquip. Culpa et excepteur ad adipisicing nostrud sint eu ad veniam. Eiusmod culpa labore aliqua proident. Proident cillum adipisicing aliqua quis laborum nisi ut sunt laborum dolor qui aute.
-                    </div>
-                    <a
-                        href="/" 
-                        class="carouselBtn mt-7 inline-block ctaBtn bg-transparent border-2 border-white py-3 px-8 rounded-full font-medium text-lg md:text-xl duration-300 transform hover:scale-95 cursor-pointer"
-                    >
-                        Buy This
-                    </a>
-                </article>
-            </div>
-        </div>
-    </section>
-    <carousel :items-to-show="1.5">
-        <slide v-for="slide in 10" :key="slide">
-        {{ slide }}
-        </slide>
-
-        <template #addons>
-        <navigation />
-        <pagination />
-        </template>
-    </carousel>
-    <!-- <Splide
-        class="customBg py-20 text-white text-center md:text-left px-8" 
-        :options="{ rewind: true }" 
-        aria-label="My Favorite Images"
-    >
-        <SplideSlide
-            v-for="item in featureProducts"
-            :key="item.title"
-            class="flex items-center"
-        >
-            <div class="container flex flex-col md:flex-row items-center gap-14 md:gap-10 lg:gap-14">
-                <figure class="relative w-full md:w-6/12">
+            <slide 
+                v-for="item in featureProducts"
+                :key="item.title"
+            >
+                <div class="container relative duration-300 hover:opacity-80">
+                    <a :href="item.btnLink" class="block absolute top-0 left-0 bottom-0 right-0 opacity-0 z-10" />
                     <img
                         v-if="!item.videoLink && item.image"
-                        style="max-height: 60vh;"
-                        class="w-6/12 md:w-auto mx-auto lg:ml-0"
+                        class="w-full aspect-video object-cover"
                         :src="item.image"
-                        alt="image.alt"
+                        :alt="item.title"
                     />
                     <img 
                         v-else-if="item.videoLink && thumbUrl(item.videoLink)"
-                        class="w-full h-auto" 
-                        :src="thumbUrl(item.videoLink)" 
+                        class="w-full aspect-video object-cover" 
+                        :src="thumbUrl(item.videoLink)"
+                        :alt="item.title" 
                     />
-                    <a 
-                        v-if="item.videoLink && thumbUrl(item.videoLink)" 
-                        :href="item.videoLink" 
-                        target="_blank"
-                        class="customBg customHoverBg block hover:opacity-80 duration-300 absolute top-2/4 left-2/4 rounded-full pl-3.5 p-3 transform -translate-x-2/4 -translate-y-2/4 z-50"
+                    <div class="sm:scale-150 absolute top-2/4 left-2/4 rounded-full pl-2.5 p-2 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                        <CustomModal
+                            v-if="item.videoLink"
+                            :videoUrl="item.videoLink"
+                            :videoTitle="item.title"
+                            theme="brand"
+                            :playBtn="true"
+                        />
+                    </div>
+                    <h1 
+                        v-if="item.title" 
+                        class="text-left max-w-full px-5 py-3 bg-black bg-opacity-80 static md:absolute right-0 bottom-0 text-2xl sm:text-3xl lg:text-4xl font-medium leading-tight sm:leading-tight lg:leading-tight"
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                        </svg>
-                    </a>
-                </figure>
-                <article class="max-w-2xl md:max-w-full w-full md:w-6/12">
-                    <h1 v-if="item.title" class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight sm:leading-tight lg:leading-tight">
                         {{item.title}}
                     </h1>
-                    <div 
-                        v-if="item.desc" 
-                        class="mt-6 text-lg md:text-xl space-y-4" 
-                        v-html="item.desc"
-                    />
-                    <a
-                        v-if="item.btnLink" 
-                        :href="item.btnLink" 
-                        class="carouselBtn mt-7 inline-block ctaBtn bg-transparent border-2 border-white py-3 px-8 rounded-full font-medium text-lg md:text-xl duration-300 transform hover:scale-95 cursor-pointer"
-                    >
-                        <span v-if="item.btnText">{{item.btnText}}</span>
-                        <span v-else>Buy This</span>
-                    </a>
-                </article>
-            </div>
-        </SplideSlide>
-    </Splide> -->
+                </div>
+            </slide>
+
+            <template #addons>
+                <navigation class="mt-0" />
+                <pagination class="mt-0 absolute -bottom-14 left-0 right-0" />
+            </template>
+        </carousel>
+    </section>
 </template>
 
 <style>
-    .carouselBtn:hover {
-        color: var(--vp-c-brand);
-        @apply bg-white;
-    }
-    .splide__track {
-        @apply pb-16;
-    }
-    .splide__pagination {
-        @apply pb-16;
-    }
-    .splide__arrow {
-        @apply text-white text-xl bg-black bg-opacity-50 hover:bg-opacity-80 duration-300;
-    }
-    .splide__arrow svg {
-        @apply fill-white;
+    .carousel__next,
+    .carousel__prev {
+        @apply bg-white bg-opacity-70 hover:bg-opacity-100 p-1.5 rounded-full duration-300;
     }
 </style>
 

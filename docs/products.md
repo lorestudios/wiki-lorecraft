@@ -3,8 +3,9 @@ layout: page
 title: Home
 
 productGrid:
-    tagOptions: ["technology", "gudie", "develop", "fruit", "food", "blog"]
-    itemsPerRow: '4'
+    defaultLoad: 9 
+    itemsPerRow: 4
+    itemsGap: 5
 
 customFeature:
     heading: Feature section

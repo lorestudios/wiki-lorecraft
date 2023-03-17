@@ -17,7 +17,7 @@ customHero:
   # modalButton:
   #   theme: brand
   #   buttonText: Tour
-  #   videoUrl: https://www.youtube.com/embed/RhAoLSX9n1Y
+  #   videoUrl: https://youtu.be/7gNi7QwYLCw
   #   videoTitle: This is new title
 
 customCta:
