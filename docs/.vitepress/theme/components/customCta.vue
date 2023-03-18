@@ -94,7 +94,7 @@ export default {
         },
         btnBgColor: {
             type: String,
-            default: "white",
+            default: "transparent",
         },
         btnBorderColor: {
             type: String,

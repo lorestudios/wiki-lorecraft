@@ -67,7 +67,7 @@ Lorecraft is a friendly and welcoming Minecraft server designed to help builders
     bgColor=""
     bgImg="../images/wonder.png"
     btnBgColor="magenta"
-    btnBorderColor="magenta"
+    btnBorderColor="yellow"
     btnTextColor="white"
 />
 <CustomFeature>
