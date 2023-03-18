@@ -70,9 +70,24 @@ export default {
         }
     },
 
+    props: {
+        productType: {
+            type: String,
+            default: 'all',
+        },
+    },
+
     computed: {
+        // "marketPlace": true,
+        // "education": false,
         featureProducts() {
-            return this.products.filter(product => product.isFeatured)
+            if(this.productType == 'marketplace'){
+                return this.products.filter(product => product.isFeatured && product.marketplace)
+            }else if(this.productType == 'education'){
+                return this.products.filter(product => product.isFeatured && product.education)
+            }else {
+                return this.products.filter(product => product.isFeatured)
+            }
         },
     },
 

@@ -28,13 +28,13 @@
                 <a  
                     v-if="allowCopy == 'true' || allowCopy == 'True'"
                     class="relative overflow-hidden ctaBtn bg-transparent border-2 border-white py-3 px-8 rounded-full font-medium text-lg md:text-xl duration-300 transform hover:scale-95 cursor-pointer"
-                    :style="textStyle(textColor)"
+                    :style="buttonStyle(btnTextColor, btnBgColor, btnBorderColor)"
                     @click="copyURL(btnUrl)"
                 >
                     {{btnText}}
                     <span 
                         class="copyText" :class="{'opacity-100': showCopied==true}"
-                        :style="{'background-color': `${bgColor};`, 'color': `${textColor};`}"
+                        :style="{'background-color': `${bgColor}`, 'color': `${textColor}`}"
                     >
                         Copied
                     </span>
@@ -44,7 +44,7 @@
                     v-else
                     :href="btnUrl" 
                     class="ctaBtn bg-transparent border-2 border-white py-3 px-8 rounded-full font-medium text-lg md:text-xl duration-300 transform hover:scale-95 cursor-pointer"
-                    :style="textStyle(textColor)"
+                    :style="buttonStyle(btnTextColor, btnBgColor, btnBorderColor)"
                 >
                     {{btnText}}
                 </a>
@@ -87,11 +87,23 @@ export default {
     props: {
         title: String,
         desc: String,
+        btnUrl: String,
         btnText: {
             type: String,
             default: "Learn More",
         },
-        btnUrl: String,
+        btnBgColor: {
+            type: String,
+            default: "white",
+        },
+        btnBorderColor: {
+            type: String,
+            default: "white",
+        },
+        btnTextColor: {
+            type: String,
+            default: "white",
+        },
         allowCopy: {
             type: String,
             default: 'false',
@@ -162,13 +174,20 @@ export default {
         overlayStyle(ovColor, ovOpacity) {
             return {
                 'background-color': `${ovColor}`,
-                'opacity': `${ovOpacity}%`
+                'opacity': `${ovOpacity}%`,
             }
         },
         textStyle(textColor) {
             return {
                 'color': `${textColor}`,
                 'border-color': `${textColor}`,
+            }
+        },
+        buttonStyle(textColor, bgColor, borderColor) {
+            return {
+                'color': `${textColor}`,
+                'background-color': `${bgColor}`,
+                'border-color': `${borderColor}`,
             }
         }
     },

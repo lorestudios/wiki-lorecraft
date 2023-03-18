@@ -26,8 +26,12 @@ export default {
     socialLinks: [{icon: "discord", link: "https://discord.gg/lorestudios"}],
     nav: [
       {
-        text: "Products",
-        link: "/products",
+        text: "Products (mp)",
+        link: "/marketplace",
+      },
+      {
+        text: "Products (ed)",
+        link: "/education",
       },
       {
         text: "Marketplace",

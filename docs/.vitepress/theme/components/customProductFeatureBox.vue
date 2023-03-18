@@ -1,7 +1,7 @@
 <template>
     <a
         :href="link" 
-        class="customBox p-6 rounded-lg shadow-sm hover:shadow-lg duration-300 overflow-hidden transform hover:scale-105"
+        class="customBox p-6 rounded-lg shadow-sm hover:shadow-lg duration-300 overflow-hidden transform hover:scale-105 justify-self-center"
     >
         <div class="flex gap-4 mb-5 flex-col">
             <div class="block">

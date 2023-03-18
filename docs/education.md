@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Home
+title: Products list page
 
 productGrid:
-    defaultLoad: 9 
-    itemsPerRow: 4
-    itemsGap: 5
+    defaultLoad: 9
+    itemsPerRow: 3
+    itemsGap: 30px
 
 customFeature:
-    heading: Feature section
+    heading: Education Feature section
     description: This is short description right here. And this is optional;
     itemPerRow: 4
     items:
@@ -28,13 +28,8 @@ customFeature:
             title: "Friendly Community"
             text: "Our community supports each other to be the best builders, level designers, and content creators we can be. Join us on our friendly discord server!"
             link: "/"
-        -   iconImg: "./../images/community.png"
-            title: "Friendly Community"
-            text: "Our community supports each other to be the best builders, level designers, and content creators we can be. Join us on our friendly discord server!"
-            link: "/"
-
 ---
 
-<CustomCarousel />
-<CustomProductGrid />
+<CustomCarousel productType="education" />
+<CustomProductGrid productType="education" />
 <CustomProductFeature />

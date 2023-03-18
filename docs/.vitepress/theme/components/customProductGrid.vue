@@ -44,6 +44,9 @@
                             class="bg-transparent text-sm"
                             v-model="sort"
                         >
+                            <option value="">
+                                Default
+                            </option>
                             <option value="new-to-old">
                                 New to old
                             </option>
@@ -62,7 +65,11 @@
             </div>
         </div>
         <div class="px-8">
-            <div class="container mt-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div
+                :style="`gap: ${page.frontmatter.productGrid.itemsGap}`" 
+                class="container mt-14 grid"
+                :class="rwoClasses"
+            >
                 <CustomProductItem
                     v-if="sortedProduct.length > 0" 
                     v-for="item in sortedProduct"
@@ -102,11 +109,12 @@ import {useData} from "vitepress";
 export default {
     data() {
         return {
+            page: useData(),
             show: false,
             products: products,
             search: '',
             tag: '',
-            sort: 'new-to-old',
+            sort: '',
         }
     },
 
@@ -119,17 +127,41 @@ export default {
 
     computed: {
         filteredProduct() {
-            return this.products.filter(product => {
-                if(this.tag) {
-                    return product.isFeatured == false && 
-                    product.title.toLowerCase().includes(this.search.toLowerCase()) &&
-                    product.tags.indexOf(this.tag) !== -1    
-                }else {
-                    return product.isFeatured == false && 
-                    product.title.toLowerCase().includes(this.search.toLowerCase())
-                }
-                
-            })
+            // return this.products.filter(product => product.isFeatured && product.marketplace)
+            if(this.productType=='marketplace') {
+                return this.products.filter(product => {
+                    if(this.tag) {
+                        return !product.isFeatured && product.marketplace &&
+                        product.title.toLowerCase().includes(this.search.toLowerCase()) &&
+                        product.tags.indexOf(this.tag) !== -1
+                    }else {
+                        return !product.isFeatured && product.marketplace
+                        product.title.toLowerCase().includes(this.search.toLowerCase())
+                    }
+                })    
+            }else if(this.productType=='education') {
+                return this.products.filter(product => {
+                    if(this.tag) {
+                        return !product.isFeatured && product.education
+                        product.title.toLowerCase().includes(this.search.toLowerCase()) &&
+                        product.tags.indexOf(this.tag) !== -1
+                    }else {
+                        return !product.isFeatured && product.education 
+                        product.title.toLowerCase().includes(this.search.toLowerCase())
+                    }
+                })
+            }else {
+                return this.products.filter(product => {
+                    if(this.tag) {
+                        return !product.isFeatured && 
+                        product.title.toLowerCase().includes(this.search.toLowerCase()) &&
+                        product.tags.indexOf(this.tag) !== -1
+                    }else {
+                        return !product.isFeatured && 
+                        product.title.toLowerCase().includes(this.search.toLowerCase())
+                    }
+                })
+            }
         },
         sortedProduct() {
             if(this.sort == 'new-to-old'){
@@ -151,25 +183,52 @@ export default {
                     if (fa > fb) {return -1}
                     if (fa < fb) {return 1}return 0
                 })
+            }else {
+                return this.filteredProduct;
             }
         },
         tags() {
             const oldArr = this.sortedProduct.map(x => x.tags.map(y => y))
             const newArr = [];
-
             for(let i = 0; i<oldArr.length; i++) {
                 for(let j = 0; j<oldArr[i].length; j++) {
                     newArr.push(oldArr[i][j]);
                 } 
             } 
-            
             return [ ...new Set(newArr) ]
+        },
+        rwoClasses() {
+            if(this.page.frontmatter.productGrid.itemsPerRow) {
+                let itemNum = this.page.frontmatter.productGrid.itemsPerRow;
+                if(itemNum == 12) {
+                    return 'grid-cols-1 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12';
+                }else if(itemNum == 11) {
+                    return 'grid-cols-1 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-10';
+                }else if(itemNum == 10) {
+                    return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10';
+                }else if(itemNum == 9) {
+                    return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 2xl:grid-cols-9';
+                }else if(itemNum == 8) {
+                    return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8';
+                }else if(itemNum == 7) {
+                    return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7';
+                }else if(itemNum == 6) {
+                    return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-6';
+                }else if(itemNum == 5) {
+                    return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5';
+                }else if(itemNum == 4) {
+                    return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4';
+                }else if(itemNum == 3) {
+                    return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3';
+                }else if(itemNum == 2) {
+                    return 'grid-cols-1 sm:grid-cols-1 md:grid-cols-2';
+                }else {
+                    return 'grid-cols-1';
+                }
+            }else {
+                return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3';
+            }
         }
     },
 }
-</script>
-
-<script setup>
-import {useData} from "vitepress";
-const {page} = useData();
 </script>
