@@ -9,6 +9,11 @@
 @tailwind utilities;
 
 @layer base {
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+
 	.customBtn {
         border: 1px solid transparent;
         text-align: center;
@@ -54,6 +59,25 @@
     }
     .customHoverBg:hover {
         background-color: var(--vp-button-brand-hover-bg);
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+    .fadeIn {
+        animation-name: fadeIn;
+        animation-duration: 1s;
+    }
+
+    @keyframes bluffing {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+    .bluffing {
+        animation-name: bluffing;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
     }
 }
 

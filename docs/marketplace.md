@@ -3,7 +3,7 @@ layout: page
 title: Products list page
 
 productGrid:
-    defaultLoad: 9 
+    defaultLoad: 9
     itemsPerRow: 3
     itemsGap: 30px
 

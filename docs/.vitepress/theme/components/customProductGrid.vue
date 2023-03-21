@@ -28,7 +28,7 @@
                                 All Tags
                             </option>
                             <option
-                                v-for="item in tags" 
+                                v-for="item in tags(pageProducts)" 
                                 :key="item"
                                 :value="item"
                             >
@@ -66,19 +66,29 @@
         </div>
         <div class="px-8">
             <div
+                id="product-list"
+                v-if="finalProducts(loadedProducts).length > 0" 
                 :style="`gap: ${page.frontmatter.productGrid.itemsGap}`" 
                 class="container mt-14 grid"
                 :class="rwoClasses"
             >
                 <CustomProductItem
-                    v-if="sortedProduct.length > 0" 
-                    v-for="item in sortedProduct"
-                    :key="item.title"
+                    v-for="(item, index) in finalProducts(loadedProducts)"
+                    :key="index+':'+item.title"
                     :itemInfo="item"
                 />
-                <p v-else>
-                    No match found!!
-                </p>
+            </div>
+            <div v-else class="container fadeIn bg-gray-100 my-10 py-20 text-xl font-medium text-center">
+                No match found!!
+            </div>
+            <div ref="loadMore" class="container text-xl mt-14 font-medium text-center">
+                <div v-if="finalProducts(loadedProducts).length > 0 && isLoaded<pageProducts.length" class="bluffing">
+                    Loading more...
+                </div>
+                <div v-if="finalProducts(loadedProducts).length > 0 && isLoaded>=pageProducts.length" class="fadeIn flex flex-wrap items-center justify-center gap-2">
+                    Showing all,
+                    <a href="#product-list" class="inline-block customLink">back to top?</a>
+                </div>
             </div>
         </div>
     </section>
@@ -100,6 +110,12 @@
     select option {
         background-color: var(--vp-c-bg);
     }
+    .customLink {
+        color: var(--vp-home-hero-name-color);
+    }
+    .customLink:hover {
+        color: var(--vp-button-brand-hover-bg);
+    }
 </style>
 
 <script>
@@ -115,6 +131,9 @@ export default {
             search: '',
             tag: '',
             sort: '',
+            willLoad: 9,
+            isLoaded: 0,
+            loadedProducts: [],
         }
     },
 
@@ -126,76 +145,14 @@ export default {
     },
 
     computed: {
-        filteredProduct() {
-            // return this.products.filter(product => product.isFeatured && product.marketplace)
+        pageProducts(){
             if(this.productType=='marketplace') {
-                return this.products.filter(product => {
-                    if(this.tag) {
-                        return !product.isFeatured && product.marketplace &&
-                        product.title.toLowerCase().includes(this.search.toLowerCase()) &&
-                        product.tags.indexOf(this.tag) !== -1
-                    }else {
-                        return !product.isFeatured && product.marketplace
-                        product.title.toLowerCase().includes(this.search.toLowerCase())
-                    }
-                })    
+                return this.products.filter(product => !product.isFeatured && product.marketplace);    
             }else if(this.productType=='education') {
-                return this.products.filter(product => {
-                    if(this.tag) {
-                        return !product.isFeatured && product.education
-                        product.title.toLowerCase().includes(this.search.toLowerCase()) &&
-                        product.tags.indexOf(this.tag) !== -1
-                    }else {
-                        return !product.isFeatured && product.education 
-                        product.title.toLowerCase().includes(this.search.toLowerCase())
-                    }
-                })
+                return this.products.filter(product => !product.isFeatured && product.education);
             }else {
-                return this.products.filter(product => {
-                    if(this.tag) {
-                        return !product.isFeatured && 
-                        product.title.toLowerCase().includes(this.search.toLowerCase()) &&
-                        product.tags.indexOf(this.tag) !== -1
-                    }else {
-                        return !product.isFeatured && 
-                        product.title.toLowerCase().includes(this.search.toLowerCase())
-                    }
-                })
+                return this.products.filter(product => !product.isFeatured);
             }
-        },
-        sortedProduct() {
-            if(this.sort == 'new-to-old'){
-                return this.filteredProduct.slice().reverse();
-            }
-            else if(this.sort == 'old-to-new'){
-                return this.filteredProduct;
-            }
-            else if(this.sort == 'a-to-z') {
-                return this.filteredProduct.sort((a,b) => {
-                    let fa = a.title.toLowerCase(), fb = b.title.toLowerCase();
-                    if (fa < fb) {return -1}
-                    if (fa > fb) {return 1}return 0
-                })
-            }
-            else if(this.sort == 'z-to-a') {
-                return this.filteredProduct.sort((a,b) => {
-                    let fa = a.title.toLowerCase(), fb = b.title.toLowerCase();
-                    if (fa > fb) {return -1}
-                    if (fa < fb) {return 1}return 0
-                })
-            }else {
-                return this.filteredProduct;
-            }
-        },
-        tags() {
-            const oldArr = this.sortedProduct.map(x => x.tags.map(y => y))
-            const newArr = [];
-            for(let i = 0; i<oldArr.length; i++) {
-                for(let j = 0; j<oldArr[i].length; j++) {
-                    newArr.push(oldArr[i][j]);
-                } 
-            } 
-            return [ ...new Set(newArr) ]
         },
         rwoClasses() {
             if(this.page.frontmatter.productGrid.itemsPerRow) {
@@ -229,6 +186,96 @@ export default {
                 return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3';
             }
         }
+    },
+
+    // created () {
+    //     window.addEventListener('scroll', this.handleScroll);
+    // },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+        if(this.page.frontmatter.productGrid.defaultLoad) {
+            this.willLoad = this.page.frontmatter.productGrid.defaultLoad;
+        }
+        this.loadProduct();
+    },
+    beforeDestroy () {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+
+    methods: {
+        tags(productList) {
+            const oldArr = productList.map(x => x.tags.map(y => y))
+            const newArr = [];
+            for(let i = 0; i<oldArr.length; i++) {
+                for(let j = 0; j<oldArr[i].length; j++) {
+                    newArr.push(oldArr[i][j]);
+                } 
+            } 
+            return [ ...new Set(newArr) ]
+        },
+        finalProducts(givenProducts) {
+            // filtering products
+            let filteredProducts = [];
+            if(this.tag) {
+                filteredProducts = givenProducts.filter(
+                    product => product.title.toLowerCase().includes(this.search.toLowerCase()) 
+                    && product.tags.indexOf(this.tag) !== -1
+                );
+            }else {
+                filteredProducts = givenProducts.filter(
+                    product => product.title.toLowerCase().includes(this.search.toLowerCase())
+                );
+            }
+
+            // sorting products
+            let sortedProducts = [];
+            if(this.sort == 'new-to-old'){
+                sortedProducts = filteredProducts.slice().reverse();
+            }
+            else if(this.sort == 'old-to-new'){
+                sortedProducts = filteredProducts;
+            }
+            else if(this.sort == 'a-to-z') {
+                sortedProducts = filteredProducts.sort((a,b) => {
+                    let fa = a.title.toLowerCase(), fb = b.title.toLowerCase();
+                    if (fa < fb) {return -1}
+                    if (fa > fb) {return 1}return 0
+                })
+            }
+            else if(this.sort == 'z-to-a') {
+                sortedProducts = filteredProducts.sort((a,b) => {
+                    let fa = a.title.toLowerCase(), fb = b.title.toLowerCase();
+                    if (fa > fb) {return -1}
+                    if (fa < fb) {return 1}return 0
+                })
+            }else {
+                sortedProducts = filteredProducts;
+            }
+
+            return sortedProducts;
+        },
+        handleScroll() {
+            let screenHeight = window.innerHeight;
+            let loadStart = this.$refs.loadMore.getBoundingClientRect().top;
+            let limitHeight = (screenHeight*50)/100;
+
+            if(screenHeight-loadStart > limitHeight && this.isLoaded < this.pageProducts.length){              
+                this.loadProduct();
+            }
+        },
+        loadProduct(){
+            if(this.isLoaded <= 0) {
+                this.loadedProducts = this.pageProducts.slice(0, this.willLoad);
+                this.isLoaded = this.isLoaded + this.willLoad;
+            }else {
+                let lastIndex = this.isLoaded + this.willLoad;
+                if(lastIndex > this.pageProducts.length) {
+                    lastIndex = this.pageProducts.length
+                }
+                this.loadedProducts.push(...this.pageProducts.slice(this.isLoaded, lastIndex));
+                this.isLoaded = lastIndex;
+            }
+        },
     },
 }
 </script>
