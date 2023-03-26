@@ -37,6 +37,10 @@ export default {
         text: "Education",
         link: "/education",
       },
+      {
+        text: "Blog",
+        link: "/blog",
+      },
     ],
     sidebar: {
       '/documentation/': [
