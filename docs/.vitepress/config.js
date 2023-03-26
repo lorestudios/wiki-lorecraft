@@ -26,24 +26,16 @@ export default {
     socialLinks: [{icon: "discord", link: "https://discord.gg/lorestudios"}],
     nav: [
       {
-        text: "Products (mp)",
-        link: "/marketplace",
-      },
-      {
-        text: "Products (ed)",
-        link: "/education",
+        text: "Lorecraft",
+        link: "/documentation/welcome",
       },
       {
         text: "Marketplace",
-        link: "/documentation/organics",
+        link: "/marketplace",
       },
       {
         text: "Education",
-        link: "https://www.pikistudios.com/",
-      },
-      {
-        text: "Lorecraft",
-        link: "/documentation/welcome",
+        link: "/education",
       },
     ],
     sidebar: {
