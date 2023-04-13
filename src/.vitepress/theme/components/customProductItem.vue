@@ -33,9 +33,6 @@
                 class="fadeIn mt-3 space-y-3"
                 v-html="itemInfo.desc.substring(0,120)"
             />
-            <p>
-                {{ itemDate(itemInfo.date).getDate() }} / {{ itemDate(itemInfo.date).getMonth() }} / {{ itemDate(itemInfo.date).getFullYear() }}
-            </p>
         </article>
     </div>
 </template>
@@ -79,9 +76,9 @@ export default {
                 return "https://img.youtube.com/vi/"+videoId+"/0.jpg";
             }
         },
-        itemDate(jsonDate) {
-            return new Date(jsonDate);
-        },
+        // itemDate(jsonDate) {
+        //     return new Date(jsonDate);
+        // },
     },
 }
 </script>
