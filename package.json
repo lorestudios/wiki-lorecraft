@@ -5,9 +5,9 @@
   "main": "index.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:dev": "vitepress dev src",
+    "docs:build": "vitepress build src",
+    "docs:preview": "vitepress preview src"
   },
   "author": "Whetu Paitai <whetu@pikistudios.com>",
   "license": "MIT",
@@ -30,6 +30,8 @@
   "repository": "git@github.com:lorestudios/wiki-lorecraft.git",
   "private": true,
   "dependencies": {
+    "aos": "^2.3.4",
+    "vue-router": "^4.1.6",
     "vue3-carousel": "^0.2.12"
   }
 }

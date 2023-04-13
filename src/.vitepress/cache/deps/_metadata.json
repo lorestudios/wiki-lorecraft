@@ -1,0 +1,32 @@
+{
+  "hash": "f7d3a448",
+  "browserHash": "fac23d8a",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "bfff2c45",
+      "needsInterop": false
+    },
+    "aos": {
+      "src": "../../../../node_modules/aos/dist/aos.js",
+      "file": "aos.js",
+      "fileHash": "f09f3616",
+      "needsInterop": true
+    },
+    "vue3-carousel": {
+      "src": "../../../../node_modules/vue3-carousel/dist/carousel.es.js",
+      "file": "vue3-carousel.js",
+      "fileHash": "cdc7f7b6",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-R647EDCJ": {
+      "file": "chunk-R647EDCJ.js"
+    },
+    "chunk-RSJERJUL": {
+      "file": "chunk-RSJERJUL.js"
+    }
+  }
+}
